@@ -7,6 +7,7 @@
   <title>Blanchard художественная галлерея</title>
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="img/favicon.png" />
 </head>
@@ -245,13 +246,39 @@
               fill="white" />
           </svg>
         </button>
-        <input class="header__input-search" type="text" name="search" id="search" placeholder="Поиск по сайту" required />
+        <input class="header__input-search" type="text" name="search" id="search" placeholder="Поиск по сайту"
+          required />
       </form>
     </div>
   </header>
+
+  <main class="main">
+    <section id="hero" class="section__hero container section__container">
+      <h1 class="hero__title">
+        Прикоснитесь к&nbsp;прекрасному
+      </h1>
+      <p class="section__descr hero__descr">
+        Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт предпосылки для
+        новых предложений.
+      </p>
+      <button class="btn-reset hero__btn">
+        Подписаться на&nbsp;рассылку
+      </button>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide hero__slide1" tabindex="-1"></div>
+          <div class="swiper-slide hero__slide2" tabindex="-1"></div>
+          <div class="swiper-slide hero__slide3" tabindex="-1"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+  </main>
 </body>
 
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
 <script src="js/artists-menu.js"></script>
+<script src="js/slider.js"></script>
 
 </html>

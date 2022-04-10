@@ -48,6 +48,15 @@ a:focus {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+      url('../fonts/OpenSans-Bold.woff') format('woff');
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
 /* glob */
 .lst-reset {
   margin: 0;
@@ -78,6 +87,11 @@ body {
 }
 
 /* header */
+.header {
+  position: relative;
+  z-index: 20;
+}
+
 .header__line1 {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -435,4 +449,120 @@ body {
   .header__menu1 {
     width: 58%;
   }
+}
+
+/* hero */
+.section__hero {
+  position: relative;
+  padding-top: 63px;
+  min-height: 800px;
+}
+
+.swiper-container {
+  position: absolute;
+  top: -170px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  background-color: #d1ad7e;
+  animation-name: resize;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 30px;
+}
+
+.hero__slide1 {
+  background-image: url('../img/hero-bg1.jpg');
+}
+
+.hero__slide2 {
+  background-image: url('../img/hero-bg2.jpg');
+}
+
+.hero__slide3 {
+  background-image: url('../img/hero-bg3.jpg');
+}
+
+@keyframes resize {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.hero__title,
+.hero__descr,
+.hero__btn {
+  position: relative;
+  color: #fff;
+  z-index: 15;
+}
+
+.hero__title {
+  max-width: 597px;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 98px;
+}
+
+.hero__descr {
+  margin-bottom: 92px;
+  max-width: 579px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.hero__btn {
+  padding: 17px 35px;
+  height: 70px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  background: #9d5cd0;
+  border-radius: 100px;
+  outline: none;
+  transition: outline .3s ease-in-out, background-color .3s ease-in-out;
+}
+
+.hero__btn::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  background-color: none;
+  border-radius: 100px;
+}
+
+.hero__btn:focus:not(:active):not(:hover)::before {
+  outline: 2px solid #d1a9f0;
+  border: 2px solid #fff;
+}
+
+.hero__btn:hover,
+.hero__btn:active {
+  outline: 3px solid #d1a9f0;
+}
+
+.hero__btn:active {
+  background-color: #7943a4;
 }
