@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -565,4 +566,26 @@ body {
 
 .hero__btn:active {
   background-color: #7943a4;
+}
+
+/* about */
+.section__about {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.about__title {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 65px;
+  color: #333;
+}
+
+.about__descr {
+  max-width: 1080px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #333;
 }
