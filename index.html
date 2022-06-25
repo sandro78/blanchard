@@ -5,9 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blanchard художественная галлерея</title>
-  <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/choices.min.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="img/favicon.png" />
 </head>
@@ -264,11 +265,11 @@
       <button class="btn-reset hero__btn">
         Подписаться на&nbsp;рассылку
       </button>
-      <div class="swiper-container">
+      <div class="swiper-container hero__swiper-container">
         <div class="swiper-wrapper">
-          <div class="swiper-slide hero__slide1" tabindex="-1"></div>
-          <div class="swiper-slide hero__slide2" tabindex="-1"></div>
-          <div class="swiper-slide hero__slide3" tabindex="-1"></div>
+          <div class="swiper-slide hero__swiper-slide hero__slide1" tabindex="-1"></div>
+          <div class="swiper-slide hero__swiper-slide hero__slide2" tabindex="-1"></div>
+          <div class="swiper-slide hero__swiper-slide hero__slide3" tabindex="-1"></div>
         </div>
       </div>
     </section>
@@ -287,12 +288,100 @@
         определенных слоев населения, а&nbsp;значит, должны быть разоблачены.
       </p>
     </section>
+    <section id="gallery" class="section__gallery container section__container">
+      <div class="gallery__content flex">
+        <div class="gallery__left-pane flex">
+          <h2 class="section__title gallery__title">
+            Галерея
+          </h2>
+          <div class="gallery__filter-wrapper flex">
+            <label for="filter" class="gallery__filter-label">
+              Фильтр:
+            </label>
+            <div class="gallery__filter-container">
+              <select name="filter" id="galleryFilterSelect" class="gallery__select">
+                <option value="1" selected>
+                  Живопись
+                </option>
+                <option value="2">
+                  Рисунок
+                </option>
+                <option value="3">
+                  Скульптура
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="gallery__checkbox-wrapper flex">
+            <label class="gallery__check-label">
+              <input class="gallery__checkbox visually-hidden" type="checkbox" name="art-period">
+              <span class="visible-checkbox"></span>
+              <span class="checkbox-text">XIX&nbsp;век</span>
+            </label>
+            <label class="gallery__check-label">
+              <input class="gallery__checkbox visually-hidden" type="checkbox" name="art-period">
+              <span class="visible-checkbox"></span>
+              <span class="checkbox-text">XX&nbsp;век</span>
+            </label>
+            <label class="gallery__check-label">
+              <input class="gallery__checkbox visually-hidden" type="checkbox" name="art-period">
+              <span class="visible-checkbox"></span>
+              <span class="checkbox-text">Современность</span>
+            </label>
+          </div>
+        </div>
+        <div class="gallery__swiper">
+          <div class="swiper-navigation gallery__navigation">
+            <button class="gallery__nav-btn gallery__btn-prev" aria-label="К предыдущему слайду"></button>
+            <div class="gallery__pagination"></div>
+            <button class="gallery__nav-btn gallery__btn-next" aria-label="К следующему слайду"></button>
+          </div>
+          <div class="swiper-container gallery__slides-container">
+            <div class="swiper-wrapper">
+              <a class="swiper-slide gallery__swiper-slide" href="#">
+                <picture>
+                  <img class="gallery__image" src="img/gallery-picture1.jpg" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide gallery__swiper-slide" href="#">
+                <picture>
+                  <img class="gallery__image" src="img/gallery-picture2.jpg" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide gallery__swiper-slide" href="#">
+                <picture>
+                  <img class="gallery__image" src="img/gallery-picture3.jpg" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide gallery__swiper-slide" href="#">
+                <picture>
+                  <img class="gallery__image" src="img/gallery-picture4.jpg" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide gallery__swiper-slide" href="#">
+                <picture>
+                  <img class="gallery__image" src="img/gallery-picture5.jpg" alt="">
+                </picture>
+              </a>
+              <a class="swiper-slide gallery__swiper-slide" href="#">
+                <picture>
+                  <img class="gallery__image" src="img/gallery-picture6.jpg" alt="">
+                </picture>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 </body>
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
 <script src="js/artists-menu.js"></script>
-<script src="js/slider.js"></script>
+<script src="js/hero-swiper.js"></script>
+<script src="js/choices.min.js"></script>
+<script src="js/gallery-filter.js"></script>
+<script src="js/gallery-swiper.js"></script>
 
 </html>
