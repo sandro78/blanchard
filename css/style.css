@@ -937,18 +937,25 @@ body {
 }
 
 .catalog__artists-descr {
+  position: relative;
   max-width: calc(750 / 1600 * 100%);
   min-width: calc(750 / 1600 * 100%);
   margin-right: 50px;
 }
 
 .artist__descr {
-  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
   flex-direction: column;
+  transition: opacity .5s ease-in-out;
 }
 
 .artist__descr--active {
-  display: flex;
+  opacity: 1;
 }
 
 .artist-descr__picture,
