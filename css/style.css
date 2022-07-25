@@ -831,6 +831,20 @@ body {
   border: none;
   border-radius: 50%;
   cursor: pointer;
+  transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+}
+
+.gallery__nav-btn:focus,
+.gallery__nav-btn:active {
+  outline: 2px solid #000;
+}
+
+.gallery__nav-btn:hover {
+  background-color: #9d5cd0;
+}
+
+.gallery__nav-btn:active {
+  background-color: #7943a4;
 }
 
 .gallery__nav-btn::before {
@@ -910,11 +924,11 @@ body {
 }
 
 .gallery__swiper-slide:focus::before {
-  border-color: #7943A4;
+  border-color: #7943a4;
 }
 
 .gallery__swiper-slide:active::before {
-  border-color: #D1A9F0;
+  border-color: #d1a9f0;
   background-color: rgba(194, 131, 243, 0.4);
 }
 
@@ -1181,4 +1195,164 @@ body {
   line-height: 22px;
   color: #333;
   max-width: 275px;
+}
+
+/* events */
+.events__swiper {
+  position: relative;
+}
+
+.events__nav-btn {
+  position: absolute;
+  top: calc(50% - 25px);
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 100%;
+  background-color: #ececec;
+  min-width: 50px;
+  min-height: 50px;
+  background-size: 11.79px 11.79px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../img/artists-period-closed-bg.svg');
+  transition: opacity .2s ease-in-out, outline .2s ease-in-out, background-color .2s ease-in-out;
+  cursor: pointer;
+}
+
+.events__nav-btn:focus,
+.events__nav-btn:active {
+  outline: 2px solid #9d5cd0;
+}
+
+.events__nav-btn:hover,
+.events__nav-btn:active {
+  background-color: #d1a9f0;
+}
+
+.events__btn-prev {
+  transform: rotate(90deg);
+  left: -25px;
+}
+
+.events__btn-next {
+  transform: rotate(-90deg);
+  right: -25px;
+}
+
+.swiper-button-disabled {
+  opacity: 0;
+}
+
+.section__events {
+  margin-bottom: 80px;
+}
+
+.events__slides-container {
+  overflow: hidden;
+  padding: 5px;
+}
+
+.events__swiper-slide {
+  flex-direction: column;
+  padding: 313px calc(50/1600*100%) 48px calc(50/1600*100%);
+  background-repeat: no-repeat;
+  background-size: 100% 300px;
+  background-position: left top;
+  max-width: 25%;
+  height: auto;
+  outline: 1px solid #cacaca;
+}
+
+.event__slide1 {
+  background-image: url('../img/event-bg1.jpg');
+}
+
+.event__slide2 {
+  background-image: url('../img/event-bg2.jpg');
+}
+
+.event__slide3 {
+  background-image: url('../img/event-bg3.jpg');
+}
+
+.event__slide4 {
+  background-image: url('../img/event-bg4.jpg');
+}
+
+.event__slide5 {
+  background-image: url('../img/event-bg5.jpg');
+}
+
+.event__place,
+.event__dates {
+  margin: 0;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #999;
+}
+
+.event__dates {
+  margin-bottom: 13px;
+}
+
+.event__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: #333;
+}
+
+.event__descr {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #333;
+}
+
+.event__lnk {
+  position: relative;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #9d5cd0;
+  margin: 0;
+  margin-top: auto;
+  width: fit-content;
+  border-bottom: 1px solid #9d5cd0;
+  transition: color .2s ease-in-out, border-bottom .2s ease-in-out;
+}
+
+.event__lnk::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: -2px;
+  right: -8px;
+  bottom: -9px;
+  z-index: -1;
+}
+
+.event__lnk:focus {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.event__lnk:focus::before {
+  background-color: #9d5cd0;
+}
+
+.event__lnk:hover {
+  color: #7943a4;
+  border-bottom: 1px solid #7943a4;
+}
+
+.event__lnk:active {
+  color: #333;
+  border-bottom: 1px solid #333;
 }
