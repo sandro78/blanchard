@@ -1,5 +1,5 @@
-document.addEventListener("DOMContentLoaded", () => {
-  let gallerySlider = new Swiper(".events__slides-container", {
+(() => {
+  new Swiper(".events__slides-container", {
     slidesPerView: 3,
     slidesPerGroup: 1,
     grid: {
@@ -65,4 +65,4 @@ document.addEventListener("DOMContentLoaded", () => {
     //   }
     // }
   });
-});
+})();

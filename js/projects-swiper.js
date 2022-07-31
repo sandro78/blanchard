@@ -1,19 +1,15 @@
 (() => {
-  new Swiper(".gallery__slides-container", {
+  new Swiper(".projects__slides-container", {
     slidesPerView: 3,
-    slidesPerGroup: 3,
+    slidesPerGroup: 1,
     grid: {
       rows: 1,
       fill: "row"
     },
     spaceBetween: 20,
-    pagination: {
-      el: ".gallery__pagination",
-      type: "fraction"
-    },
     navigation: {
-      nextEl: ".gallery__btn-next",
-      prevEl: ".gallery__btn-prev"
+      nextEl: ".projects__btn-next",
+      prevEl: ".projects__btn-prev"
     },
 
     breakpoints: {
@@ -24,7 +20,7 @@
 
       1200: {
         slidesPerView: 3,
-        spaceBetween: 50
+        spaceBetween: "2.8125%"
       }
     },
 

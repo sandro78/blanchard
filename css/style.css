@@ -1356,3 +1356,138 @@ body {
   color: #333;
   border-bottom: 1px solid #333;
 }
+
+/* projects */
+.projects__descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #333;
+}
+
+.projects__tooltip-btn {
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.projects__tooltip-btn:focus .tooltip__icon-border,
+.projects__tooltip-btn:hover .tooltip__icon-border {
+  fill: #d1a9f0;
+}
+
+.projects__tooltip-btn:active .tooltip__icon-border {
+  fill: #9d5cd0;
+}
+
+.projects__lnk {
+  padding-left: 6px;
+  padding-right: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+  color: #9d5cd0;
+  transition: background-color .2s ease-in-out, border-bottom .2s ease-in-out, color .2s ease-in-out;
+}
+
+.projects__lnk:focus {
+  background-color: #9d5cd0;
+  color: #fff;
+}
+
+.projects__lnk:hover {
+  border-bottom: 1px solid #9d5cd0;
+}
+
+.projects__lnk:active {
+  color: #7943a4;
+  border-bottom: 1px solid #7943a4;
+}
+
+.projects-swiper__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333;
+}
+
+.projects__swiper {
+  position: relative;
+}
+
+.projects__nav-btn {
+  position: absolute;
+  top: calc(50% - 15px);
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 100%;
+  background-color: #ececec;
+  min-width: 30px;
+  min-height: 30px;
+  background-size: 7.07px 7.07px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../img/artists-period-closed-bg.svg');
+  transition: opacity .2s ease-in-out, outline .2s ease-in-out, background-color .2s ease-in-out;
+  cursor: pointer;
+}
+
+.projects__nav-btn:focus,
+.projects__nav-btn:active {
+  outline: 2px solid #9d5cd0;
+}
+
+.projects__nav-btn:hover,
+.projects__nav-btn:active {
+  background-color: #d1a9f0;
+}
+
+.projects__btn-prev {
+  transform: rotate(90deg);
+  left: -15px;
+}
+
+.projects__btn-next {
+  transform: rotate(-90deg);
+  right: -15px;
+}
+
+.section__projects {
+  margin-bottom: 80px;
+}
+
+.projects__slides-container {
+  overflow: hidden;
+  padding: 5px;
+}
+
+.projects__swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  height: 150px;
+  outline: 1px solid #cacaca;
+}
+
+.projects__image {
+  width: fit-content;
+  height: fit-content;
+  filter: gralescale(100%);
+  -webkit-filter: grayscale(100%);
+  opacity: 0.4;
+  transition: filter .2s ease-in-out, -webkit-filter .2s ease-in-out, opacity .2s ease-in-out;
+}
+
+.projects__swiper-slide:hover .projects__image,
+.projects__swiper-slide:active .projects__image {
+  filter: none;
+  -webkit-filter: none;
+  opacity: 1;
+}
+
+.projects__swiper-slide:focus,
+.projects__swiper-slide:active {
+  outline: 1px solid #9d5cd0;
+}
