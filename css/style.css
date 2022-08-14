@@ -941,6 +941,92 @@ body {
   object-fit: cover;
 }
 
+.gallery__modal-overlay {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100%;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity .2s ease-in-out, visibility .2s ease-in-out;
+  z-index: 100;
+}
+
+.gallery__modal {
+	display: none;
+  position: relative;
+	background-color: #fff;
+	width: 900px;
+	min-height: 500px;
+}
+
+.gallery-modal__close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.gallery__modal-overlay--visible {
+	opacity: 1;
+	visibility: visible;
+}
+
+.gallery__modal--visible {
+	display: flex;
+}
+
+.gallery-modal__img {
+  width: calc(400/900*100%);
+}
+
+.gallery-modal__right-side {
+  flex-direction: column;
+  padding: 121px 48px 20px 50px;
+}
+
+.gallery-modal__title {
+  flex-direction: column;
+}
+
+.gallery-modal__artist-name {
+  margin: 0;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: #333;
+}
+
+.gallery-modal__picture-name {
+  margin: 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #333;
+}
+
+.gallery-modal__period {
+  margin-bottom: 39px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #999;
+}
+
+.gallery-modal__picture-descr {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #333;
+}
+
 /* catalog */
 .section__catalog {
   margin-bottom: 80px;
