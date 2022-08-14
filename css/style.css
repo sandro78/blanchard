@@ -1494,7 +1494,6 @@ body {
 
 /* contacts */
 .section__contacts {
-  margin-bottom: 80px;
   padding: 0;
   border: 1px solid #cacaca;
 }
@@ -1620,4 +1619,24 @@ body {
 
 [class*="ground-pane"] {
   filter: grayscale(1);
+}
+
+/* footer */
+.footer__container {
+  padding: 50px 160px;
+  justify-content: space-between;
+  background-color: #000;
+}
+
+.footer-social__lnk > svg > path {
+  transition: fill .2s ease-in-out;
+}
+
+.footer-social__lnk:focus > svg > path,
+.footer-social__lnk:hover > svg > path {
+  fill: #fff;
+}
+
+.footer-social__lnk:active > svg > path {
+  fill: #9d5cd0;
 }
