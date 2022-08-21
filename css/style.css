@@ -117,6 +117,66 @@ body {
   background-color: #000;
 }
 
+.menu-burger {
+  padding: 38px 0 50px 50px;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  flex-direction: column;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  position: absolute;
+  transition: transform .3s ease-in, visibility .3s ease-in;
+  transform: translateX(-101%);
+  z-index: 30;
+}
+
+.menu-burger__close-btn {
+  margin-bottom: 30px;
+}
+
+.menu-burger__nav {
+  flex-direction: column;
+}
+
+.menu-burger--active {
+  transform: none;
+  visibility: visible;
+}
+
+.menu-burger__lnk {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 64px;
+  color: #fff;
+}
+
+.menu-burger__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.menu-burger__btn {
+  display: none;
+  outline-offset: 5px;
+}
+
+.menu-burger__icon--active {
+  display: none;
+}
+
+.menu-burger__btn:focus {
+  outline: 2px solid #9d5cd0;
+}
+
+.menu-burger__btn:active .menu-burger__icon--active {
+  display: inline;
+}
+
+.menu-burger__btn:active .menu-burger__icon--default {
+  display: none;
+}
+
 .header-logo__wrapper {
   width: 22%;
 }
@@ -475,6 +535,57 @@ body {
   border-bottom: 1px solid #c283f3;
 }
 
+.menu-burger-login__wrapper {
+  padding: 19px 88px 22px 88px;
+  width: fit-content;
+  margin-top: auto;
+  border: 2px solid #9d5cd0;
+  border-radius: 100px;
+}
+
+.header-search__wrapper {
+  align-items: center;
+}
+
+.header-menu__search {
+  margin-right: 5px;
+}
+
+.search-form {
+  align-items: center;
+  opacity: 0;
+  width: 0;
+  height: 36px;
+  background: #000;
+  transition: width .2s ease-in-out, opacity .2s ease-in-out;
+}
+
+.search-form--active {
+  width: 314px;
+  opacity: 1;
+}
+
+.search-form__fld {
+  margin-right: 5px;
+  width: 100%;
+  border: none;
+  color: #fff;
+  background-color: #000;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.85);
+}
+
+.search-form__close-btn:active svg rect,
+.header-menu__search:active svg rect {
+  fill: #9d5cd0;
+}
+
+.header-menu__search:active svg path {
+  stroke: #9d5cd0;
+}
+
 @media screen and (max-width: 1450px) {
   .header-login__wrapper {
     width: 20%;
@@ -482,6 +593,22 @@ body {
 
   .header__menu1 {
     width: 58%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header__line1 {
+    padding: 37px 50px;
+  }
+
+  .menu-burger__btn {
+    display: inline-block;
+  }
+
+  .header__menu1,
+  .header__line2,
+  .header-login__wrapper {
+    display: none;
   }
 }
 
