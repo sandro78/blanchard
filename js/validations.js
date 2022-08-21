@@ -1,4 +1,3 @@
-const selector = document.querySelector("input[type='tel']");
 const validation = new JustValidate('.contacts__form', {
   errorFieldCssClass: 'is-invalid',
   focusInvalidField: true,
@@ -28,8 +27,8 @@ validation.addField('#phone', [
   {
     rule: 'checkTelFormat',
     validator: () => {
-      const phone = selector.textContent;
-      return Number(phone);
+      const phone = document.querySelector("input[type='tel']").value;
+      return !isNaN(Number(phone));
     },
     errorMessage: 'Недопустимый формат'
   }

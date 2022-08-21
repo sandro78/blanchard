@@ -20,7 +20,7 @@
 
       1200: {
         slidesPerView: 3,
-        spaceBetween: "2.8125%"
+        spaceBetween: "3.4375%"
       }
     },
 

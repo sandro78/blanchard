@@ -427,6 +427,7 @@ body {
 }
 
 .header__search {
+  padding-right: 30px;
   min-width: 250px;
   align-items: center;
 }
@@ -488,7 +489,7 @@ body {
 .section__hero {
   position: relative;
   padding-top: 63px;
-  min-height: 800px;
+  min-height: 630px;
 }
 
 .hero__swiper-container {
@@ -542,10 +543,11 @@ body {
 }
 
 .hero__title {
+  margin: 0;
   max-width: 597px;
   font-weight: 700;
   font-size: 72px;
-  line-height: 98px;
+  line-height: 84px;
 }
 
 .hero__descr {
@@ -596,7 +598,7 @@ body {
 /* about */
 .section__about {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 50px;
 }
 
 /* gallery */
@@ -625,6 +627,7 @@ body {
 }
 
 .gallery__title {
+  margin-bottom: 25px;
   color: #fff;
 }
 
@@ -633,7 +636,7 @@ body {
 }
 
 .gallery__filter-label {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .gallery__filter-container > .choices,
@@ -729,6 +732,10 @@ body {
   cursor: pointer;
 }
 
+.gallery__check-label:not(:last-child) {
+  margin-bottom: 15px;
+}
+
 .gallery__check-label:hover .visible-checkbox {
   border-color: #c283f3;
 }
@@ -803,6 +810,7 @@ body {
 }
 
 .gallery__swiper {
+  padding-top: 25px;
   width: calc(1150 / 1600 * 100%);
   margin-right: 0;
 }
@@ -814,7 +822,8 @@ body {
 .gallery__navigation {
   display: inline-flex;
   align-items: center;
-  margin-bottom: 10px;
+  padding-left: 15px;
+  margin-bottom: 30px;
 }
 
 .gallery__pagination {
@@ -1033,7 +1042,7 @@ body {
 }
 
 .catalog__descr {
-  margin-bottom: 50px;
+  margin-bottom: 42px;
 }
 
 .catalog__artists-descr {
@@ -1076,7 +1085,7 @@ body {
 
 .artist-descr__name {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-weight: 600;
   font-size: 24px;
   line-height: 33px;
@@ -1085,7 +1094,7 @@ body {
 
 .artist-descr__dates {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -1112,23 +1121,29 @@ body {
   width: 50%;
 }
 
-.artists__item {
-  position: relative;
+.artists__wrapper,
+.ui-accordion .ui-accordion-header,
+.ui-state-default {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
   margin-top: -1px;
-  padding: 29px 0;
-  border-top: 1px solid transparent;
+  padding: 0;
+  padding-top: 18px;
+  padding-bottom: 16px;
+  border: none;
+  border-top: 1px solid #cacaca;
   border-bottom: 1px solid #cacaca;
+  background: none;
   transition: border-top .2s ease-in, border-bottom .2s ease-in;
 }
 
-.artists__item > * {
+.artists__wrapper > * {
   z-index: 2;
 }
 
-.artists__item::after {
+.artists__wrapper::after {
   content: "";
   position: absolute;
   left: 0;
@@ -1137,17 +1152,6 @@ body {
   right: 0;
   cursor: pointer;
   z-index: 1;
-}
-
-.artists__wrapper,
-.ui-accordion .ui-accordion-header,
-.ui-state-default {
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: none;
-  background: none;
 }
 
 .artists__icon {
@@ -1170,24 +1174,15 @@ body {
   transform: rotate(-180deg);
 }
 
-.artists__item:first-child {
-  border-top: 1px solid #cacaca;
-}
-
-.artists__item:hover,
-.artists__item:focus {
+.artists__wrapper:hover,
+.artists__wrapper:focus {
   border-top: 1px solid #d1a9f0;
   border-bottom: 1px solid #d1a9f0;
 }
 
-.artists__item:hover .artists__icon,
-.artists__item:focus .artists__icon {
+.artists__wrapper:hover .artists__icon,
+.artists__wrapper:focus .artists__icon {
   background-color: #d1a9f0;
-}
-
-.artists__item:first-child:hover,
-.artists__item:first-child:focus {
-  border-top: 1px solid #d1a9f0;
 }
 
 .artists__epoch {
@@ -1207,17 +1202,19 @@ body {
 
 .ui-accordion .ui-accordion-content {
   padding: 0;
+  padding-left: 1px;
   padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 5px;
+  padding-right: 69px;
   max-width: 1003px;
+  min-height: 340px;
+  font-family: 'Open Sans';
 }
 
-.artists__item:hover .artists__epoch {
+.artists__wrapper:hover .artists__epoch {
   color: #9d5cd0;
 }
 
-.artists__item:focus .artists__epoch {
+.artists__wrapper:focus .artists__epoch {
   background-color: #9d5cd0;
   color: #fff;
 }
@@ -1284,6 +1281,14 @@ body {
 }
 
 /* events */
+.section__events {
+  margin-bottom: 76px;
+}
+
+.events__title {
+  margin-bottom: 10px;
+}
+
 .events__swiper {
   position: relative;
 }
@@ -1330,22 +1335,19 @@ body {
   opacity: 0;
 }
 
-.section__events {
-  margin-bottom: 80px;
-}
-
 .events__slides-container {
   overflow: hidden;
-  padding: 5px;
+  padding: 1px;
 }
 
 .events__swiper-slide {
   flex-direction: column;
-  padding: 313px calc(50/1600*100%) 48px calc(50/1600*100%);
+  padding: 318px calc(50/1600*100%) 40px calc(45/1600*100%);
   background-repeat: no-repeat;
   background-size: 100% 300px;
   background-position: left top;
-  max-width: 25%;
+  max-width: 25.125%;
+  min-height: 348px;
   height: auto;
   outline: 1px solid #cacaca;
 }
@@ -1381,20 +1383,28 @@ body {
 
 .event__dates {
   margin-bottom: 13px;
+  padding-left: 5px;
 }
 
 .event__title {
   margin: 0;
   margin-bottom: 10px;
+  padding-left: 5px;
+  max-width: 380px;
   font-weight: 600;
   font-size: 24px;
   line-height: 33px;
   color: #333;
 }
 
+.event1__title {
+  margin-bottom: 5px;
+}
+
 .event__descr {
   margin: 0;
   padding: 0;
+  padding-left: 5px;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
@@ -1444,7 +1454,14 @@ body {
 }
 
 /* projects */
+.section__projects {
+  margin-bottom: 75px;
+}
+
 .projects__descr {
+  margin: 0;
+  margin-bottom: 20px;
+  max-width: 1100px;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
@@ -1453,6 +1470,8 @@ body {
 
 .projects__tooltip-btn {
   padding: 0;
+  padding-left: 5px;
+  padding-top: 3px;
   background: none;
   border: none;
 }
@@ -1467,7 +1486,7 @@ body {
 }
 
 .projects__lnk {
-  padding-left: 6px;
+  padding: 0;
   padding-right: 6px;
   font-weight: 600;
   font-size: 16px;
@@ -1491,6 +1510,8 @@ body {
 }
 
 .projects-swiper__title {
+  margin: 0;
+  margin-bottom: 20px;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -1499,6 +1520,7 @@ body {
 
 .projects__swiper {
   position: relative;
+  z-index: 1;
 }
 
 .projects__nav-btn {
@@ -1517,6 +1539,7 @@ body {
   background-image: url('../img/artists-period-closed-bg.svg');
   transition: opacity .2s ease-in-out, outline .2s ease-in-out, background-color .2s ease-in-out;
   cursor: pointer;
+  z-index: 2;
 }
 
 .projects__nav-btn:focus,
@@ -1531,30 +1554,33 @@ body {
 
 .projects__btn-prev {
   transform: rotate(90deg);
-  left: -15px;
+  left: 0px;
 }
 
 .projects__btn-next {
   transform: rotate(-90deg);
-  right: -15px;
-}
-
-.section__projects {
-  margin-bottom: 80px;
+  right: 0px;
 }
 
 .projects__slides-container {
   overflow: hidden;
   padding: 5px;
+  padding-left: 75px;
+  padding-right: 75px;
 }
 
 .projects__swiper-slide {
   display: flex;
+  visibility: hidden;
   align-items: center;
   justify-content: center;
   width: 450px;
   height: 150px;
   outline: 1px solid #cacaca;
+}
+
+.projects__swiper-slide.slide-visible {
+  visibility: visible;
 }
 
 .projects__image {
@@ -1581,6 +1607,7 @@ body {
 /* contacts */
 .section__contacts {
   padding: 0;
+  padding-top: 33px;
   border: 1px solid #cacaca;
 }
 
@@ -1612,7 +1639,8 @@ body {
 }
 
 .contacts-form__item {
-  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .contacts-form__fld {
@@ -1633,9 +1661,7 @@ body {
 }
 
 .just-validate-error-label {
-  position: absolute;
-  left: 24px;
-  top: -17px;
+  padding-left: 24px;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -1700,7 +1726,7 @@ body {
 
 .map-container {
   width: 100%;
-  height: 700px;
+  height: 730px;
 }
 
 [class*="ground-pane"] {
@@ -1712,6 +1738,10 @@ body {
   padding: 50px 160px;
   justify-content: space-between;
   background-color: #000;
+}
+
+.footer__socials>.social__item:last-child {
+  margin-right: 0;
 }
 
 .footer-social__lnk > svg > path {
