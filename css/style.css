@@ -767,6 +767,7 @@ body {
 @media screen and (max-width: 1024px) {
   .section__about {
     padding-top: 120px;
+    padding-bottom: 52px;
   }
 }
 
@@ -796,7 +797,7 @@ body {
 }
 
 .gallery__title {
-  margin-bottom: 25px;
+  margin-bottom: 18px;
   color: #fff;
 }
 
@@ -805,7 +806,10 @@ body {
 }
 
 .gallery__filter-label {
-  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+  margin-bottom: 8px;
 }
 
 .gallery__filter-container > .choices,
@@ -823,11 +827,8 @@ body {
 
 .gallery__filter-container > .choices {
   position: relative;
-  width: 400px;
+  width: 100%;
   height: 40px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 32px;
 }
 
 .gallery__filter-container > .choices > .choices__inner {
@@ -839,6 +840,9 @@ body {
   padding: 3px 0 15px 15px;
   border: none;
   min-height: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
 }
 
 .gallery__filter-container > .choices > .choices__inner > .choices__list--single {
@@ -1204,6 +1208,65 @@ body {
   line-height: 22px;
   color: #333;
 }
+
+@media screen and (max-width: 1024px) {
+  .gallery__left-pane {
+    width: calc(280/924*100%);
+  }
+
+  .gallery__filter-container > .choices > .choices__inner > .choices__list--single {
+    padding-left: 0;
+  }
+
+  .gallery__filter-container > .choices > .choices__inner > .choices__list--single::after {
+    left: calc(100% - 23px);
+  }
+
+  .gallery__checkbox-wrapper {
+    margin-bottom: 42px;
+  }
+
+  .gallery__check-label:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  .visible-checkbox {
+    margin-right: 8px;
+  }
+
+  .gallery__swiper {
+    padding-top: 26px;
+    width: calc(593/924*100%);
+  }
+
+  .gallery__navigation {
+    padding-left: 2px;
+  }
+
+  .gallery__nav-btn {
+    padding: 0;
+    width: 30px;
+    height: 30px;
+  }
+
+  .gallery__btn-prev {
+    margin-right: 16px;
+  }
+
+  .gallery__pagination {
+    margin-right: 18px;
+  }
+
+  .section__gallery {
+    padding: 80px 50px;
+  }
+
+  .gallery__swiper-slide {
+    max-width: 280px;
+    min-height: 315px;
+  }
+}
+
 
 /* catalog */
 .section__catalog {
