@@ -1274,6 +1274,7 @@ body {
 }
 
 .catalog__descr {
+  margin: 0;
   margin-bottom: 42px;
 }
 
@@ -1421,6 +1422,7 @@ body {
   position: relative;
   display: inline;
   padding: 0;
+  font-family: 'Open Sans';
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
@@ -1510,6 +1512,42 @@ body {
   line-height: 22px;
   color: #333;
   max-width: 275px;
+}
+
+@media screen and (max-width: 1024px) {
+  .artist-descr__picture,
+  .artist-descr__image {
+    max-height: 274px;
+    min-height: 274px;
+  }
+
+  .catalog__descr {
+    margin-bottom: 38px;
+  }
+
+  .catalog__artists-descr {
+    max-width: calc(437 / 924 * 100%);
+    min-width: calc(437 / 924 * 100%);
+  }
+
+  .artist-descr__dates {
+    margin-bottom: 16px;
+  }
+
+  .ui-accordion .ui-accordion-content {
+    padding: 0;
+    padding-top: 25px;
+    max-width: 437px;
+    min-height: 434px;
+    column-gap: 65px;
+  }
+
+  .artists__wrapper,
+  .ui-accordion .ui-accordion-header,
+  .ui-state-default {
+    padding-top: 18px;
+    padding-bottom: 16px;
+  }
 }
 
 /* events */
