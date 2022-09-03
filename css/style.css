@@ -764,6 +764,12 @@ body {
   padding-bottom: 50px;
 }
 
+@media screen and (max-width: 1024px) {
+  .section__about {
+    padding-top: 120px;
+  }
+}
+
 /* gallery */
 .section__gallery {
   padding: 80px 160px;
