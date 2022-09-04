@@ -2127,7 +2127,7 @@ body {
   }
 
   .map-container {
-    height: 700px;
+    height: 695px;
   }
 }
 
@@ -2135,6 +2135,7 @@ body {
 .footer__container {
   padding: 50px 160px;
   justify-content: space-between;
+  align-items: center;
   background-color: #000;
 }
 
@@ -2153,4 +2154,26 @@ body {
 
 .footer-social__lnk:active > svg > path {
   fill: #9d5cd0;
+}
+
+.social__svg,
+.social__svg-1024 {
+  display: none;
+}
+
+@media screen and (min-width: 1025px) {
+  .social__svg {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer__container {
+    padding: 50px;
+    padding-top: 40px;
+  }
+
+  .social__svg-1024 {
+    display: block;
+  }
 }
