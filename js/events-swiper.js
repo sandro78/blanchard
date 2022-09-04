@@ -1,7 +1,7 @@
 (() => {
   new Swiper(".events__slides-container", {
     slidesPerView: 3,
-    slidesPerGroup: 1,
+    slidesPerGroup: 3,
     grid: {
       rows: 1,
       fill: "row"
@@ -11,11 +11,15 @@
       nextEl: ".events__btn-next",
       prevEl: ".events__btn-prev"
     },
+    pagination: {
+      el: '.events__swiper-pagination',
+      clickable: true
+    },
 
     breakpoints: {
-      441: {
-        slidesPerView: 2,
-        spaceBetween: 30
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 28
       },
 
       1200: {
