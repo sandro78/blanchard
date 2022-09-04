@@ -1729,6 +1729,10 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
+  .section__events {
+    margin-bottom: 120px;
+  }
+
   .events__title {
     margin-bottom: 17px;
   }
@@ -1949,6 +1953,19 @@ body {
 .projects__swiper-slide:focus,
 .projects__swiper-slide:active {
   outline: 1px solid #9d5cd0;
+}
+
+@media screen and (max-width: 1024px) {
+  .projects__slides-container {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+
+  .projects__swiper-slide {
+    width: 384px;
+    height: 126px;
+    outline: 1px solid #cacaca;
+  }
 }
 
 /* contacts */
