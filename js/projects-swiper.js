@@ -18,7 +18,7 @@
         spaceBetween: 50
       },
 
-      1200: {
+      1540: {
         slidesPerView: 3,
         spaceBetween: "2.8125%"
       }
