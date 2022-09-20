@@ -623,6 +623,17 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .header-logo__wrapper {
+    margin-left: -7px;
+  }
+
+  .header-menu__search svg {
+    width: 27px;
+    height: 27px;
+  }
+}
+
 /* hero */
 .section__hero {
   position: relative;
@@ -755,6 +766,20 @@ body {
 
   .hero__slide3 {
     background-image: url('../img/hero-bg3-1024.jpg');
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero__slide1 {
+    background-image: url('../img/hero-bg1-768.jpg');
+  }
+
+  .hero__slide2 {
+    background-image: url('../img/hero-bg2-768.jpg');
+  }
+
+  .hero__slide3 {
+    background-image: url('../img/hero-bg3-768.jpg');
   }
 }
 
@@ -1258,7 +1283,7 @@ body {
 
   .gallery__swiper {
     padding-top: 26px;
-    width: calc(593/924*100%);
+    width: 100%;
   }
 
   .gallery__navigation {
@@ -1289,6 +1314,28 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .gallery__content {
+    flex-direction: column;
+  }
+
+  .gallery__left-pane {
+    width: calc(281/668*100%);
+  }
+
+  .gallery__filter-wrapper {
+    margin-bottom: 45px;
+  }
+
+  .gallery__checkbox-wrapper {
+    margin-bottom: 23px;
+  }
+
+  .gallery__swiper-slide {
+    max-width: 315px;
+    min-height: 330px;
+  }
+}
 
 /* catalog */
 .section__catalog {
@@ -1572,6 +1619,53 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .artist-descr__picture,
+  .artist-descr__image {
+    max-height: fit-content;
+    min-height: fit-content;
+  }
+
+  .artist-descr__picture {
+    margin-bottom: 18px;
+  }
+
+  .artist-descr__name {
+    margin-bottom: 8px;
+  }
+
+  .artist-descr__dates {
+    margin-bottom: 6px;
+  }
+
+  .catalog__descr {
+    margin-bottom: 20px;
+  }
+
+  .catalog__content {
+    flex-direction: column-reverse;
+  }
+
+  .catalog__artists-nav {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .ui-accordion .ui-accordion-content {
+    max-width: 100%;
+    min-height: 313px;
+    margin-bottom: 26px;
+    column-gap: 58px;
+  }
+
+  .catalog__artists-descr {
+    margin-right: 0;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 725px;
+  }
+}
+
 /* events */
 .section__events {
   margin-bottom: 76px;
@@ -1826,6 +1920,33 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .events__swiper-slide {
+    padding-left: 28px;
+    padding-right: 15px;
+    max-width: calc(274/668*100%);
+    min-height: 426px;
+  }
+
+  .events__nav-btn {
+    display: none;
+  }
+
+  .event__title {
+    max-width: 240px;
+    margin-bottom: 5px;
+  }
+
+  .event__descr {
+    max-width: 240px;
+  }
+
+  .events__swiper-pagination {
+    display: block;
+    left: 304px !important;
+  }
+}
+
 /* projects */
 .section__projects {
   margin-bottom: 75px;
@@ -1859,6 +1980,18 @@ body {
 }
 
 .projects__lnk {
+  padding: 0;
+  padding-right: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+  color: #9d5cd0;
+  transition: background-color .2s ease-in-out, border-bottom .2s ease-in-out, color .2s ease-in-out;
+}
+
+
+.projects__lnk--768 {
+  display: none;
   padding: 0;
   padding-right: 6px;
   font-weight: 600;
@@ -1986,7 +2119,40 @@ body {
   .projects__swiper-slide {
     width: 384px;
     height: 126px;
-    outline: 1px solid #cacaca;
+  }
+
+  .projects__swiper-slide > picture,
+  .projects__swiper-slide > picture > img {
+    max-width: 283px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projects__descr {
+    max-width: 657px;
+    margin-bottom: 30px;
+  }
+
+  .projects__lnk {
+    display: none;
+  }
+
+  .projects__lnk--768 {
+    display: inline;
+  }
+
+  .projects__swiper-slide {
+    width: 264px;
+    height: 106px;
+  }
+
+  .projects-swiper__title {
+    margin-bottom: 22px;
+  }
+
+  .projects__swiper-slide > picture,
+  .projects__swiper-slide > picture > img {
+    max-width: 217px;
   }
 }
 
@@ -2153,6 +2319,26 @@ body {
 
   .map-container {
     height: 695px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contacts__form {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contacts-form__fields {
+    margin-bottom: 12px;
+  }
+
+  .contacts-form__fld {
+    width: 323px;
+  }
+
+  .contacts-form__btn {
+    padding: 10px 20px;
+    width: 317px;
   }
 }
 

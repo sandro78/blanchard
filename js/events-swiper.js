@@ -17,12 +17,18 @@
     },
 
     breakpoints: {
+      768: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 34
+      },
+
       1024: {
         slidesPerView: 3,
         spaceBetween: 28
       },
 
-      1200: {
+      1540: {
         slidesPerView: 3,
         spaceBetween: "3.4375%"
       }
