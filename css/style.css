@@ -770,7 +770,7 @@ body {
   left: -2px;
   width: calc(100% + 4px);
   height: calc(100% + 4px);
-  background-color: none;
+  background: none;
   border-radius: 100px;
 }
 
@@ -2389,7 +2389,7 @@ body {
 .projects__image {
   width: fit-content;
   height: fit-content;
-  filter: gralescale(100%);
+  filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
   opacity: 0.4;
   transition: filter .2s ease-in-out, -webkit-filter .2s ease-in-out, opacity .2s ease-in-out;
