@@ -229,8 +229,8 @@
         </div>
       </div>
       <div class="header-logo__wrapper" id="logo">
-        <a class="header__logo">
-          <picture class="header-logo__img" tabindex="-1">
+        <a class="header__logo" tabindex="-1">
+          <picture class="header-logo__img">
             <source media="(max-width: 568px)" srcset="img/logo-320.svg">
             <source media="(max-width: 1024px)" srcset="img/logo-1024.svg">
             <img src="img/logo.svg" alt="">
@@ -533,7 +533,7 @@
             Галерея
           </h2>
           <div class="gallery__filter-wrapper flex">
-            <label for="filter" class="gallery__filter-label">
+            <label for="galleryFilterSelect" class="gallery__filter-label">
               Фильтр:
             </label>
             <div class="gallery__filter-container">
@@ -638,7 +638,7 @@
       <div class="catalog__content flex">
         <div class="catalog__artists-descr">
           <div class="artist__descr flex" id="artist-descr-stub">
-            <picture class="artist-descr__picture"></picture>
+            <div class="artist-descr__picture"></div>
             <h3 class="artist-descr__name">
               Что мы&nbsp;о&nbsp;нём знаем?
             </h3>
@@ -1154,8 +1154,8 @@
   </main>
   <footer class="footer">
     <div class="footer__container flex">
-      <a class="header__logo footer__logo">
-        <img src="img/logo.svg" alt="" class="header-logo__img footer-logo__img" tabindex="-1">
+      <a class="header__logo footer__logo" tabindex="-1">
+        <img src="img/logo.svg" alt="" class="header-logo__img footer-logo__img">
       </a>
       <ul class="lst-reset footer__socials flex">
         <li class="social__item">
