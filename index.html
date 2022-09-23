@@ -476,7 +476,7 @@
         </li>
       </ul>
       <form class="header__search flex" action="https://jsonplaceholder.typicode.com/posts">
-        <button class="btn-reset header__btn-search" type="submit">
+        <button class="btn-reset header__btn-search" type="submit" aria-label="Поиск">
           <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="6.8678" height="1.71695"
               transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white" />
@@ -486,7 +486,7 @@
           </svg>
         </button>
         <input class="header__input-search" type="text" name="search" id="search" placeholder="Поиск по сайту"
-          required />
+          required aria-label="Поиск по сайту" />
       </form>
     </div>
   </header>
@@ -537,7 +537,7 @@
               Фильтр:
             </label>
             <div class="gallery__filter-container">
-              <select name="filter" id="galleryFilterSelect" class="gallery__select">
+              <select name="filter" id="galleryFilterSelect" class="gallery__select" aria-label="Фильтр галерии">
                 <option value="1" selected>
                   Живопись
                 </option>
@@ -677,7 +677,7 @@
             <li class="artists__item" tabindex="-1">
               <div class="artists__wrapper flex" tabindex="-1">
                 <h3 class="artists__epoch">C&nbsp;1400 по&nbsp;1499&nbsp;гг</h3>
-                <button class="artists__icon" tabindex="0"></button>
+                <button class="artists__icon" tabindex="0" aria-label="Художники пятнадцатого века"></button>
               </div>
               <div class="artists__lst flex" tabindex="-1">
                 <a class="catalog__artist-lnk" data-path="1400-01" tabindex="0">
@@ -757,7 +757,7 @@
             <li class="artists__item" tabindex="-1">
               <div class="artists__wrapper flex" tabindex="-1">
                 <h3 class="artists__epoch">C&nbsp;1500 по&nbsp;1599&nbsp;гг</h3>
-                <button class="artists__icon" tabindex="0"></button>
+                <button class="artists__icon" tabindex="0" aria-label="Художники шестнадцатого века"></button>
               </div>
               <div class="artists__lst-stub flex">
                 <div class="artists-lst-stub__img">
@@ -779,7 +779,7 @@
             <li class="artists__item" tabindex="-1">
               <div class="artists__wrapper flex" tabindex="-1">
                 <h3 class="artists__epoch">C&nbsp;1600 по&nbsp;1699&nbsp;гг</h3>
-                <button class="artists__icon" tabindex="0"></button>
+                <button class="artists__icon" tabindex="0" aria-label="Художники семнадцатого века"></button>
               </div>
               <div class="artists__lst-stub flex">
                 <div class="artists-lst-stub__img">
@@ -801,7 +801,7 @@
             <li class="artists__item" tabindex="-1">
               <div class="artists__wrapper flex" tabindex="-1">
                 <h3 class="artists__epoch">C&nbsp;1700 по&nbsp;1799&nbsp;гг</h3>
-                <button class="artists__icon" tabindex="0"></button>
+                <button class="artists__icon" tabindex="0" aria-label="Художники восемнадцатого века"></button>
               </div>
               <div class="artists__lst-stub flex">
                 <div class="artists-lst-stub__img">
@@ -823,7 +823,7 @@
             <li class="artists__item" tabindex="-1">
               <div class="artists__wrapper flex" tabindex="-1">
                 <h3 class="artists__epoch">C&nbsp;1800 по&nbsp;1899&nbsp;гг</h3>
-                <button class="artists__icon" tabindex="0"></button>
+                <button class="artists__icon" tabindex="0" aria-label="Художники девятнадцатого века"></button>
               </div>
               <div class="artists__lst-stub flex">
                 <div class="artists-lst-stub__img">
@@ -845,7 +845,7 @@
             <li class="artists__item" tabindex="-1">
               <div class="artists__wrapper flex" tabindex="-1">
                 <h3 class="artists__epoch">C&nbsp;1900 по&nbsp;1999&nbsp;гг</h3>
-                <button class="artists__icon" tabindex="0"></button>
+                <button class="artists__icon" tabindex="0" aria-label="Художники двадцатого века"></button>
               </div>
               <div class="artists__lst-stub flex">
                 <div class="artists-lst-stub__img">
@@ -867,7 +867,7 @@
             <li class="artists__item" tabindex="-1">
               <div class="artists__wrapper flex" tabindex="-1">
                 <h3 class="artists__epoch">C&nbsp;2000&nbsp;г</h3>
-                <button class="artists__icon" tabindex="0"></button>
+                <button class="artists__icon" tabindex="0" aria-label="Художники двадцать первого века"></button>
               </div>
               <div class="artists__lst-stub flex">
                 <div class="artists-lst-stub__img">
@@ -1048,47 +1048,47 @@
         <button class="projects__nav-btn projects__btn-next" aria-label="К следующему слайду"></button>
         <div class="swiper-container projects__slides-container">
           <div class="swiper-wrapper">
-            <a href="#" class="swiper-slide projects__swiper-slide js-scroll-link">
+            <a href="#" class="swiper-slide projects__swiper-slide js-scroll-link" aria-label="Проект Freelands Foundation">
               <picture>
                 <img class="projects__image" src="img/projects-picture1.jpg" alt="">
               </picture>
             </a>
-            <a href="#" class="swiper-slide projects__swiper-slide js-scroll-link">
+            <a href="#" class="swiper-slide projects__swiper-slide js-scroll-link" aria-label="Проект Institute for Contemporary Art">
               <picture>
                 <img class="projects__image" src="img/projects-picture2.jpg" alt="">
               </picture>
             </a>
-            <a href="#" class="swiper-slide projects__swiper-slide js-scroll-link">
+            <a href="#" class="swiper-slide projects__swiper-slide js-scroll-link" aria-label="Проект Workhouse arts center">
               <picture>
                 <img class="projects__image" src="img/projects-picture3.jpg" alt="">
               </picture>
             </a>
-            <a href="#" class="swiper-slide projects__swiper-slide js-scroll-link">
+            <a href="#" class="swiper-slide projects__swiper-slide js-scroll-link" aria-label="Проект 1849 wine Co.">
               <picture>
                 <img class="projects__image" src="img/projects-picture4.jpg" alt="">
               </picture>
             </a>
-            <a href="#" class="swiper-slide projects__swiper-slide js-scroll-link">
+            <a href="#" class="swiper-slide projects__swiper-slide js-scroll-link" aria-label="Проект Hiscox">
               <picture>
                 <img class="projects__image" src="img/projects-picture5.jpg" alt="">
               </picture>
             </a>
-            <a href="#" class="swiper-slide projects__swiper-slide js-scroll-link">
+            <a href="#" class="swiper-slide projects__swiper-slide js-scroll-link" aria-label="Проект Stassen premium Belgian cider">
               <picture>
                 <img class="projects__image" src="img/projects-picture6.jpg" alt="">
               </picture>
             </a>
-            <a href="#" class="swiper-slide projects__swiper-slide js-scroll-link">
+            <a href="#" class="swiper-slide projects__swiper-slide js-scroll-link" aria-label="Проект Watts gallery artists village">
               <picture>
                 <img class="projects__image" src="img/projects-picture7.jpg" alt="">
               </picture>
             </a>
-            <a href="#" class="swiper-slide projects__swiper-slide js-scroll-link">
+            <a href="#" class="swiper-slide projects__swiper-slide js-scroll-link" aria-label="Проект Camden arts center">
               <picture>
                 <img class="projects__image" src="img/projects-picture8.jpg" alt="">
               </picture>
             </a>
-            <a href="#" class="swiper-slide projects__swiper-slide js-scroll-link">
+            <a href="#" class="swiper-slide projects__swiper-slide js-scroll-link" aria-label="Проект ESAD">
               <picture>
                 <img class="projects__image" src="img/projects-picture9.jpg" alt="">
               </picture>
@@ -1125,7 +1125,7 @@
           </h3>
           <ul class="lst-reset contacts-socials__lst flex">
             <li class="social__item">
-              <a href="#" class="lnk social__lnk js-scroll-link">
+              <a href="#" class="lnk social__lnk js-scroll-link" aria-label="Связаться с помощью Whatsapp">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M20 39.375C30.7005 39.375 39.375 30.7005 39.375 20C39.375 9.29948 30.7005 0.625 20 0.625C9.29948 0.625 0.625 9.29948 0.625 20C0.625 30.7005 9.29948 39.375 20 39.375Z"
@@ -1137,7 +1137,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a href="#" class="lnk social__lnk js-scroll-link">
+              <a href="#" class="lnk social__lnk js-scroll-link" aria-label="Связаться с помощью Telegram">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z"
@@ -1161,7 +1161,7 @@
       </a>
       <ul class="lst-reset footer__socials flex">
         <li class="social__item">
-          <a href="#" class="footer-social__lnk js-scroll-link">
+          <a href="#" class="footer-social__lnk js-scroll-link" aria-label="Мы В Контакте">
             <svg class="social__svg" width="45" height="45" viewBox="0 0 45 45" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -1176,7 +1176,7 @@
           </a>
         </li>
         <li class="social__item">
-          <a href="#" class="footer-social__lnk js-scroll-link">
+          <a href="#" class="footer-social__lnk js-scroll-link" aria-label="Мы в Одноклассниках">
             <svg class="social__svg" width="45" height="45" viewBox="0 0 45 45" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
