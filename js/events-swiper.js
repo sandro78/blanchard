@@ -54,19 +54,25 @@
     on: {
       init: function () {
         this.slides.forEach((slide) => {
+          const link = slide.querySelector('.event__lnk');
           if (!slide.classList.contains("slide-visible")) {
             slide.tabIndex = "-1";
+            link.tabIndex = "-1";
           } else {
-            slide.tabIndex = "";
+            slide.tabIndex = "0";
+            link.tabIndex = "0";
           }
         });
       },
       slideChange: function () {
         this.slides.forEach((slide) => {
+          const link = slide.querySelector('.event__lnk');
           if (!slide.classList.contains("slide-visible")) {
             slide.tabIndex = "-1";
+            link.tabIndex = "-1";
           } else {
-            slide.tabIndex = "";
+            slide.tabIndex = "0";
+            link.tabIndex = "0";
           }
         });
       }

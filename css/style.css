@@ -560,10 +560,12 @@ body {
 }
 
 .header-menu__search {
+  display: none;
   margin-right: 5px;
 }
 
 .search-form {
+  display: none;
   align-items: center;
   opacity: 0;
   width: 0;
@@ -618,7 +620,9 @@ body {
     width: 188px;
   }
 
-  .menu-burger__btn {
+  .menu-burger__btn,
+  .header-menu__search,
+  .search-form {
     display: inline-block;
   }
 
@@ -1025,6 +1029,7 @@ body {
   color: #999;
 }
 
+.choices:focus,
 .choices__list[aria-expanded] .choices__item:hover,
 .choices__list[aria-expanded] .choices__item:focus,
 .choices__list--dropdown .choices__item--selectable.is-highlighted,
@@ -1147,16 +1152,19 @@ body {
   flex-shrink: 0;
   width: 26px;
   height: 26px;
-  background-color: #527590;
+  background-color: #666;
   border: none;
   border-radius: 50%;
   cursor: pointer;
   transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
 }
 
-.gallery__nav-btn:focus,
 .gallery__nav-btn:active {
   outline: 2px solid #000;
+}
+
+.gallery__nav-btn:focus {
+  outline: 2px solid #9d5cd0;
 }
 
 .gallery__nav-btn:hover {
@@ -1179,7 +1187,8 @@ body {
 
 .gallery__nav-btn.swiper-button-disabled {
   cursor: auto;
-  background-color: rgba(102,102,102, 0.5);
+  color: #cacaca;
+  background-color: #ececec;
 }
 
 .gallery__btn-prev {
@@ -1565,12 +1574,14 @@ body {
   top: 0;
   bottom: 0;
   opacity: 0;
+  visibility: hidden;
   flex-direction: column;
   transition: opacity .5s ease-in-out;
 }
 
 .artist__descr--active {
   opacity: 1;
+  visibility: visible;
 }
 
 .artist-descr__picture,
@@ -1616,11 +1627,21 @@ body {
   color: #333;
 }
 
+.artists-lst-stub__descr > .artist-descr__lnk,
 .artist-descr__lnk {
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
   color: #9d5cd0;
+}
+
+.artist-descr-lnk__wrapper {
+  display: inline-block;
+}
+
+.artist-descr__lnk:focus {
+  color: #fff;
+  background-color: #9d5cd0;
 }
 
 .catalog__artists-nav {
@@ -1949,6 +1970,7 @@ body {
   cursor: pointer;
 }
 
+
 .events__nav-btn:focus,
 .events__nav-btn:active {
   outline: 2px solid #9d5cd0;
@@ -1957,6 +1979,12 @@ body {
 .events__nav-btn:hover,
 .events__nav-btn:active {
   background-color: #d1a9f0;
+}
+
+.events__nav-btn.swiper-button-disabled {
+  cursor: auto;
+  color: #cacaca;
+  background-color: #ececec;
 }
 
 .events__swiper-pagination {
@@ -1974,10 +2002,6 @@ body {
   right: -25px;
 }
 
-.swiper-button-disabled {
-  opacity: 0;
-}
-
 .events__slides-container {
   overflow: hidden;
   padding: 1px;
@@ -1993,6 +2017,10 @@ body {
   min-height: 348px;
   height: auto;
   outline: 1px solid #cacaca;
+}
+
+.events__swiper-slide:focus {
+  outline: 1px solid #9d5cd0;
 }
 
 .event__slide1 {
