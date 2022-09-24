@@ -231,7 +231,7 @@
       <div class="header-logo__wrapper" id="logo">
         <a class="header__logo" tabindex="-1">
           <picture class="header-logo__img">
-            <source media="(max-width: 568px)" srcset="img/logo-320.svg">
+            <source media="(max-width: 576px)" srcset="img/logo-320.svg">
             <source media="(max-width: 1024px)" srcset="img/logo-1024.svg">
             <img src="img/logo.svg" alt="">
           </picture>
@@ -500,9 +500,9 @@
         Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт предпосылки для
         новых предложений.
       </p>
-      <button class="btn-reset hero__btn">
+      <a class="hero__btn js-scroll-link" href="#contacts">
         Подписаться на&nbsp;рассылку
-      </button>
+      </a>
       <div class="swiper-container hero__swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide hero__swiper-slide hero__slide1" tabindex="-1"></div>
@@ -578,7 +578,7 @@
             <div class="swiper-wrapper">
               <button class="btn-reset swiper-slide gallery__swiper-slide" data-path="gallery-picture1">
                 <picture>
-                  <source media="(max-width: 568px)" srcset="img/gallery-picture1-320.jpg">
+                  <source media="(max-width: 576px)" srcset="img/gallery-picture1-320.jpg">
                   <source media="(max-width: 768px)" srcset="img/gallery-picture1-768.jpg">
                   <source media="(max-width: 1024px)" srcset="img/gallery-picture1-1024.jpg">
                   <img class="gallery__image" src="img/gallery-picture1.jpg"
@@ -675,11 +675,11 @@
         <div class="catalog__artists-nav">
           <ul class="lst-reset artists-nav__lst accordion">
             <li class="artists__item" tabindex="-1">
-              <div class="artists__wrapper flex" tabindex="-1">
+              <div class="artists__wrapper flex" tabindex="0" aria-label="Художники пятнадцатого века">
                 <h3 class="artists__epoch">C&nbsp;1400 по&nbsp;1499&nbsp;гг</h3>
-                <button class="artists__icon" tabindex="0" aria-label="Художники пятнадцатого века"></button>
+                <button class="artists__icon" tabindex="-1"></button>
               </div>
-              <div class="artists__lst flex" tabindex="-1">
+              <div class="catalog__artists-lst flex" tabindex="-1">
                 <a class="catalog__artist-lnk" data-path="1400-01" tabindex="0">
                   Бенедетто ди&nbsp;Биндо
                 </a>
@@ -891,7 +891,7 @@
       </div>
     </section>
     <section id="events" class="section__events container section__container">
-      <h2 class="catalog__title section__title events__title">
+      <h2 class="section__title events__title">
         События
       </h2>
       <div class="events__swiper">
@@ -1048,50 +1048,32 @@
         <button class="projects__nav-btn projects__btn-next" aria-label="К следующему слайду"></button>
         <div class="swiper-container projects__slides-container">
           <div class="swiper-wrapper">
-            <a href="#" class="swiper-slide projects__swiper-slide js-scroll-link" aria-label="Проект Freelands Foundation">
-              <picture>
-                <img class="projects__image" src="img/projects-picture1.jpg" alt="">
-              </picture>
+            <a href="#" class="swiper-slide projects__swiper-slide js-scroll-link">
+              <img class="projects__image" src="img/projects-picture1.jpg" alt="Проект Freelands Foundation">
             </a>
-            <a href="#" class="swiper-slide projects__swiper-slide js-scroll-link" aria-label="Проект Institute for Contemporary Art">
-              <picture>
-                <img class="projects__image" src="img/projects-picture2.jpg" alt="">
-              </picture>
+            <a href="#" class="swiper-slide projects__swiper-slide js-scroll-link">
+              <img class="projects__image" src="img/projects-picture2.jpg" alt="Проект Institute for Contemporary Art">
             </a>
-            <a href="#" class="swiper-slide projects__swiper-slide js-scroll-link" aria-label="Проект Workhouse arts center">
-              <picture>
-                <img class="projects__image" src="img/projects-picture3.jpg" alt="">
-              </picture>
+            <a href="#" class="swiper-slide projects__swiper-slide js-scroll-link">
+              <img class="projects__image" src="img/projects-picture3.jpg" alt="Проект Workhouse arts center">
             </a>
-            <a href="#" class="swiper-slide projects__swiper-slide js-scroll-link" aria-label="Проект 1849 wine Co.">
-              <picture>
-                <img class="projects__image" src="img/projects-picture4.jpg" alt="">
-              </picture>
+            <a href="#" class="swiper-slide projects__swiper-slide js-scroll-link">
+              <img class="projects__image" src="img/projects-picture4.jpg" alt="Проект 1849 wine Co.">
             </a>
-            <a href="#" class="swiper-slide projects__swiper-slide js-scroll-link" aria-label="Проект Hiscox">
-              <picture>
-                <img class="projects__image" src="img/projects-picture5.jpg" alt="">
-              </picture>
+            <a href="#" class="swiper-slide projects__swiper-slide js-scroll-link">
+              <img class="projects__image" src="img/projects-picture5.jpg" alt="Проект Hiscox">
             </a>
-            <a href="#" class="swiper-slide projects__swiper-slide js-scroll-link" aria-label="Проект Stassen premium Belgian cider">
-              <picture>
-                <img class="projects__image" src="img/projects-picture6.jpg" alt="">
-              </picture>
+            <a href="#" class="swiper-slide projects__swiper-slide js-scroll-link">
+              <img class="projects__image" src="img/projects-picture6.jpg" alt="Проект Stassen premium Belgian cider">
             </a>
-            <a href="#" class="swiper-slide projects__swiper-slide js-scroll-link" aria-label="Проект Watts gallery artists village">
-              <picture>
-                <img class="projects__image" src="img/projects-picture7.jpg" alt="">
-              </picture>
+            <a href="#" class="swiper-slide projects__swiper-slide js-scroll-link">
+              <img class="projects__image" src="img/projects-picture7.jpg" alt="Проект Watts gallery artists village">
             </a>
-            <a href="#" class="swiper-slide projects__swiper-slide js-scroll-link" aria-label="Проект Camden arts center">
-              <picture>
-                <img class="projects__image" src="img/projects-picture8.jpg" alt="">
-              </picture>
+            <a href="#" class="swiper-slide projects__swiper-slide js-scroll-link">
+              <img class="projects__image" src="img/projects-picture8.jpg" alt="Проект Camden arts center">
             </a>
-            <a href="#" class="swiper-slide projects__swiper-slide js-scroll-link" aria-label="Проект ESAD">
-              <picture>
-                <img class="projects__image" src="img/projects-picture9.jpg" alt="">
-              </picture>
+            <a href="#" class="swiper-slide projects__swiper-slide js-scroll-link">
+              <img class="projects__image" src="img/projects-picture9.jpg" alt="Проект ESAD">
             </a>
           </div>
         </div>
