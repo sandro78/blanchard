@@ -113,7 +113,7 @@ body {
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 720px) {
   .container {
     padding: 0 15px;
   }
@@ -665,7 +665,7 @@ body {
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 720px) {
   .header__line1 {
     padding: 7px 15px 2px 15px;
   }
@@ -857,7 +857,7 @@ body {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 720px) {
   .section__hero {
     display: flex;
     flex-direction: column;
@@ -919,7 +919,7 @@ body {
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 720px) {
   .section__about {
     padding-top: 50px;
     padding-left: 15px;
@@ -1486,7 +1486,7 @@ body {
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 720px) {
   .section__gallery {
     padding: 50px 15px;
     padding-bottom: 20px;
@@ -1918,11 +1918,7 @@ body {
   }
 }
 
-@media screen and (max-width: 576px) {
-  .section__catalog {
-    margin-bottom: 108px;
-  }
-
+@media screen and (max-width: 720px) {
   .catalog__title {
     font-weight: 400;
     font-size: 28px;
@@ -2252,8 +2248,9 @@ body {
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 720px) {
   .section__events {
+    padding-top: 80px;
     margin-bottom: 80px;
   }
 
@@ -2504,7 +2501,7 @@ body {
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 720px) {
   .section__projects {
     margin-bottom: 45px;
   }
@@ -2776,7 +2773,7 @@ body {
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 720px) {
   .section__contacts {
     padding-top: 0;
     border: none;
@@ -2899,7 +2896,7 @@ body {
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 720px) {
   .footer__container {
     padding: 20px 0;
     flex-direction: column-reverse;
