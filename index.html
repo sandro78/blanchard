@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blanchard художественная галлерея</title>
-  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.min.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.min.css" />
-  <link rel="stylesheet" href="css/choices.min.css" />
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" href="img/favicon.png" />
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.min.css">
+  <link rel="stylesheet" href="css/choices.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/favicon.png">
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js" defer></script>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" defer></script>
@@ -39,134 +39,6 @@
 </head>
 
 <body>
-  <div class="gallery__modals">
-    <div class="gallery__modal-overlay">
-      <div class="gallery__modal" data-target="gallery-picture1">
-        <picture class="gallery-modal__img">
-          <source media="(max-width: 1540px)" srcset="img/gallery-picture1-1024.jpg">
-          <img src="img/gallery-picture1.jpg" alt="Малевич К.С. Торс (Фигура с&nbsp;розовым лицом) 1928&ndash;1929">
-        </picture>
-        <button class="btn-reset gallery-modal__close-btn">
-          <img src="img/close.svg" alt="X" class="close-btn__img">
-        </button>
-        <div class="gallery-modal__right-side flex">
-          <div class="gallery-modal__title flex">
-            <h2 class="gallery-modal__artist-name">Казимир Малевич</h2>
-            <h3 class="gallery-modal__picture-name">&laquo;Торс (Фигура с&nbsp;розовым лицом)&raquo;</h3>
-            <span class="gallery-modal__period">1928&ndash;1929</span>
-          </div>
-          <p class="gallery-modal__picture-descr">
-            Эти странные безликие &laquo;полуобразы&raquo; (так называл подобные работы сам художник), зашифрованные
-            в&nbsp;женских фигурах и&nbsp;торсах, существуют по&nbsp;мысли К.Малевича, в&nbsp;параллельном мире,
-            в&nbsp;пределах вымышленного художником Космоса, в&nbsp;пространстве без времени. Произведение вызывает
-            ассоциации и&nbsp;с&nbsp;пластикой архаической скульптуры, и&nbsp;с&nbsp;деревянной игрушкой,
-            и&nbsp;с&nbsp;модернистским манекеном. Присутствие в&nbsp;фигуре белого цвета, дающего реальное
-            представление
-            о&nbsp;бесконечности, говорит о&nbsp;том, что в&nbsp;данном случае бесконечность заключена в&nbsp;самом
-            человеке, который и&nbsp;становится для Малевича средоточием некоего абсолюта.
-          </p>
-        </div>
-      </div>
-      <div class="gallery__modal" data-target="gallery-picture2">
-        <picture class="gallery-modal__img">
-          <source media="(max-width: 1540px)" srcset="img/gallery-modal2-1024.jpg">
-          <img src="img/gallery-modal2.jpg" alt="Малевич К.С. Женщина с&nbsp;граблями 1931&ndash;1932">
-        </picture>
-        <button class="btn-reset gallery-modal__close-btn">
-          <img src="img/close.svg" alt="X" class="close-btn__img">
-        </button>
-        <div class="gallery-modal__right-side flex">
-          <div class="gallery-modal__title flex">
-            <h2 class="gallery-modal__artist-name">Казимир Малевич</h2>
-            <h3 class="gallery-modal__picture-name">&laquo;Женщина с&nbsp;граблями&raquo;</h3>
-            <span class="gallery-modal__period">1931&ndash;1932</span>
-          </div>
-          <p class="gallery-modal__picture-descr">
-            Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича. Художник принялся
-            за&nbsp;её&nbsp;создание в&nbsp;1930&ndash;1931&nbsp;годах, после того, как первый цикл был утерян после
-            Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.
-          </p>
-        </div>
-      </div>
-      <div class="gallery__modal" data-target="gallery-picture3">
-        <img src="img/gallery-picture3.jpg" alt="Малевич К.С. Уборка ржи 1912" class="gallery-modal__img">
-        <button class="btn-reset gallery-modal__close-btn">
-          <img src="img/close.svg" alt="X" class="close-btn__img">
-        </button>
-        <div class="gallery-modal__right-side flex">
-          <div class="gallery-modal__title flex">
-            <h2 class="gallery-modal__artist-name">Казимир Малевич</h2>
-            <h3 class="gallery-modal__picture-name">&laquo;Уборка ржи&raquo;</h3>
-            <span class="gallery-modal__period">1912</span>
-          </div>
-          <p class="gallery-modal__picture-descr">
-            Эта картина Казимира Севериновича Малевича была написана в&nbsp;1912&nbsp;году. Работа выполнена маслом
-            на&nbsp;холсте. Произведение находится в&nbsp;Стеделик музеум, Амстердам. Образы крестьянской жизни, образы
-            сельского труда, воплощенные художником отличаются пронзительной нотой драматизма, о&nbsp;котором Малевичу
-            и&nbsp;в&nbsp;голову не&nbsp;приходило помышлять ранее. Одной из&nbsp;наиболее заметных черт его
-            постсупрематической живописи стала безликость людей; вместо лиц и&nbsp;голов их&nbsp;корпуса увенчаны
-            красными, черными, белыми овалами.
-          </p>
-        </div>
-      </div>
-      <div class="gallery__modal" data-target="gallery-picture4">
-        <img src="img/gallery-picture4.jpg" alt="Малевич К.С. Портрет Ивана Васильевича Клюна 1913"
-          class="gallery-modal__img">
-        <button class="btn-reset gallery-modal__close-btn">
-          <img src="img/close.svg" alt="X" class="close-btn__img">
-        </button>
-        <div class="gallery-modal__right-side flex">
-          <div class="gallery-modal__title flex">
-            <h2 class="gallery-modal__artist-name">Казимир Малевич</h2>
-            <h3 class="gallery-modal__picture-name">&laquo;Портрет Ивана Васильевича Клюна&raquo;</h3>
-            <span class="gallery-modal__period">1913</span>
-          </div>
-          <p class="gallery-modal__picture-descr">
-            Один из&nbsp;наиболее устойчивых мотивов в&nbsp;творчестве Малевича. Фронтальное изображение мужского
-            лица&nbsp;&mdash; &laquo;Крестьянина&raquo;, &laquo;Строителя&raquo;, &laquo;Православного&raquo;
-            (по&nbsp;определениям, принадлежащим самому художнику)&nbsp;&mdash; традиционно связывается с&nbsp;именем
-            одного из&nbsp;его ближайших друзей и&nbsp;последователей&nbsp;&mdash; И.В. Клюнкова (Клюна).
-          </p>
-        </div>
-      </div>
-      <div class="gallery__modal" data-target="gallery-picture5">
-        <img src="img/gallery-picture5.jpg" alt="Малевич К.С. Женщина с&nbsp;вёдрами 1912" class="gallery-modal__img">
-        <button class="btn-reset gallery-modal__close-btn">
-          <img src="img/close.svg" alt="X" class="close-btn__img">
-        </button>
-        <div class="gallery-modal__right-side flex">
-          <div class="gallery-modal__title flex">
-            <h2 class="gallery-modal__artist-name">Казимир Малевич</h2>
-            <h3 class="gallery-modal__picture-name">&laquo;Женщина с&nbsp;вёдрами&raquo;</h3>
-            <span class="gallery-modal__period">1913</span>
-          </div>
-          <p class="gallery-modal__picture-descr">
-            Яркое произведение авангардного искусства, написанное в&nbsp;1912&nbsp;году. Ныне картина хранится
-            в&nbsp;коллекции нью-йоркского Музея современного искусства.
-          </p>
-        </div>
-      </div>
-      <div class="gallery__modal" data-target="gallery-picture6">
-        <img src="img/gallery-picture6.jpg" alt="Малевич К.С. Супрематизм 1915&ndash;1916" class="gallery-modal__img">
-        <button class="btn-reset gallery-modal__close-btn">
-          <img src="img/close.svg" alt="X" class="close-btn__img">
-        </button>
-        <div class="gallery-modal__right-side flex">
-          <div class="gallery-modal__title flex">
-            <h2 class="gallery-modal__artist-name">Казимир Малевич</h2>
-            <h3 class="gallery-modal__picture-name">&laquo;Супрематизм&raquo;</h3>
-            <span class="gallery-modal__period">1915&ndash;1916</span>
-          </div>
-          <p class="gallery-modal__picture-descr">
-            В&nbsp;1916 году художник создал общество &laquo;Супремус&raquo;, придумав и&nbsp;введя в&nbsp;обиход слово
-            &laquo;супрематизм&raquo;, которое в&nbsp;переводе с&nbsp;латинского означает &laquo;главенство&raquo;.
-            Первоначально название намекало на&nbsp;превосходство цвета над другими элементами картины. Позже появился
-            и&nbsp;другой смысл: превосходство над другими направлениями, вершина эволюции в&nbsp;искусстве.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
   <header class="header">
     <div class="header__line1 container flex">
       <a href="#" class="menu-burger__btn" tabindex="0">
@@ -486,11 +358,10 @@
           </svg>
         </button>
         <input class="header__input-search" type="text" name="search" id="search" placeholder="Поиск по сайту"
-          required aria-label="Поиск по сайту" />
+          required aria-label="Поиск по сайту">
       </form>
     </div>
   </header>
-
   <main class="main">
     <section id="hero" class="section__hero container section__container">
       <h1 class="hero__title">
@@ -675,9 +546,9 @@
         <div class="catalog__artists-nav">
           <ul class="lst-reset artists-nav__lst accordion">
             <li class="artists__item" tabindex="-1">
-              <div class="artists__wrapper flex" tabindex="0" aria-label="Художники пятнадцатого века">
+              <div class="artists__wrapper flex" tabindex="-1">
                 <h3 class="artists__epoch">C&nbsp;1400 по&nbsp;1499&nbsp;гг</h3>
-                <button class="artists__icon" tabindex="-1"></button>
+                <button class="artists__icon" tabindex="0" aria-label="Художники пятнадцатого века"></button>
               </div>
               <div class="catalog__artists-lst flex" tabindex="-1">
                 <a class="catalog__artist-lnk" data-path="1400-01" tabindex="0">
@@ -1181,6 +1052,134 @@
       </ul>
     </div>
   </footer>
+  <div class="gallery__modals">
+    <div class="gallery__modal-overlay">
+      <div class="gallery__modal" data-target="gallery-picture1">
+        <picture class="gallery-modal__img">
+          <source media="(max-width: 1540px)" srcset="img/gallery-picture1-1024.jpg">
+          <img src="img/gallery-picture1.jpg" alt="Малевич К.С. Торс (Фигура с&nbsp;розовым лицом) 1928&ndash;1929">
+        </picture>
+        <button class="btn-reset gallery-modal__close-btn">
+          <img src="img/close.svg" alt="X" class="close-btn__img">
+        </button>
+        <div class="gallery-modal__right-side flex">
+          <div class="gallery-modal__title flex">
+            <h2 class="gallery-modal__artist-name">Казимир Малевич</h2>
+            <h3 class="gallery-modal__picture-name">&laquo;Торс (Фигура с&nbsp;розовым лицом)&raquo;</h3>
+            <span class="gallery-modal__period">1928&ndash;1929</span>
+          </div>
+          <p class="gallery-modal__picture-descr">
+            Эти странные безликие &laquo;полуобразы&raquo; (так называл подобные работы сам художник), зашифрованные
+            в&nbsp;женских фигурах и&nbsp;торсах, существуют по&nbsp;мысли К.Малевича, в&nbsp;параллельном мире,
+            в&nbsp;пределах вымышленного художником Космоса, в&nbsp;пространстве без времени. Произведение вызывает
+            ассоциации и&nbsp;с&nbsp;пластикой архаической скульптуры, и&nbsp;с&nbsp;деревянной игрушкой,
+            и&nbsp;с&nbsp;модернистским манекеном. Присутствие в&nbsp;фигуре белого цвета, дающего реальное
+            представление
+            о&nbsp;бесконечности, говорит о&nbsp;том, что в&nbsp;данном случае бесконечность заключена в&nbsp;самом
+            человеке, который и&nbsp;становится для Малевича средоточием некоего абсолюта.
+          </p>
+        </div>
+      </div>
+      <div class="gallery__modal" data-target="gallery-picture2">
+        <picture class="gallery-modal__img">
+          <source media="(max-width: 1540px)" srcset="img/gallery-modal2-1024.jpg">
+          <img src="img/gallery-modal2.jpg" alt="Малевич К.С. Женщина с&nbsp;граблями 1931&ndash;1932">
+        </picture>
+        <button class="btn-reset gallery-modal__close-btn">
+          <img src="img/close.svg" alt="X" class="close-btn__img">
+        </button>
+        <div class="gallery-modal__right-side flex">
+          <div class="gallery-modal__title flex">
+            <h2 class="gallery-modal__artist-name">Казимир Малевич</h2>
+            <h3 class="gallery-modal__picture-name">&laquo;Женщина с&nbsp;граблями&raquo;</h3>
+            <span class="gallery-modal__period">1931&ndash;1932</span>
+          </div>
+          <p class="gallery-modal__picture-descr">
+            Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича. Художник принялся
+            за&nbsp;её&nbsp;создание в&nbsp;1930&ndash;1931&nbsp;годах, после того, как первый цикл был утерян после
+            Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.
+          </p>
+        </div>
+      </div>
+      <div class="gallery__modal" data-target="gallery-picture3">
+        <img src="img/gallery-picture3.jpg" alt="Малевич К.С. Уборка ржи 1912" class="gallery-modal__img">
+        <button class="btn-reset gallery-modal__close-btn">
+          <img src="img/close.svg" alt="X" class="close-btn__img">
+        </button>
+        <div class="gallery-modal__right-side flex">
+          <div class="gallery-modal__title flex">
+            <h2 class="gallery-modal__artist-name">Казимир Малевич</h2>
+            <h3 class="gallery-modal__picture-name">&laquo;Уборка ржи&raquo;</h3>
+            <span class="gallery-modal__period">1912</span>
+          </div>
+          <p class="gallery-modal__picture-descr">
+            Эта картина Казимира Севериновича Малевича была написана в&nbsp;1912&nbsp;году. Работа выполнена маслом
+            на&nbsp;холсте. Произведение находится в&nbsp;Стеделик музеум, Амстердам. Образы крестьянской жизни, образы
+            сельского труда, воплощенные художником отличаются пронзительной нотой драматизма, о&nbsp;котором Малевичу
+            и&nbsp;в&nbsp;голову не&nbsp;приходило помышлять ранее. Одной из&nbsp;наиболее заметных черт его
+            постсупрематической живописи стала безликость людей; вместо лиц и&nbsp;голов их&nbsp;корпуса увенчаны
+            красными, черными, белыми овалами.
+          </p>
+        </div>
+      </div>
+      <div class="gallery__modal" data-target="gallery-picture4">
+        <img src="img/gallery-picture4.jpg" alt="Малевич К.С. Портрет Ивана Васильевича Клюна 1913"
+          class="gallery-modal__img">
+        <button class="btn-reset gallery-modal__close-btn">
+          <img src="img/close.svg" alt="X" class="close-btn__img">
+        </button>
+        <div class="gallery-modal__right-side flex">
+          <div class="gallery-modal__title flex">
+            <h2 class="gallery-modal__artist-name">Казимир Малевич</h2>
+            <h3 class="gallery-modal__picture-name">&laquo;Портрет Ивана Васильевича Клюна&raquo;</h3>
+            <span class="gallery-modal__period">1913</span>
+          </div>
+          <p class="gallery-modal__picture-descr">
+            Один из&nbsp;наиболее устойчивых мотивов в&nbsp;творчестве Малевича. Фронтальное изображение мужского
+            лица&nbsp;&mdash; &laquo;Крестьянина&raquo;, &laquo;Строителя&raquo;, &laquo;Православного&raquo;
+            (по&nbsp;определениям, принадлежащим самому художнику)&nbsp;&mdash; традиционно связывается с&nbsp;именем
+            одного из&nbsp;его ближайших друзей и&nbsp;последователей&nbsp;&mdash; И.В. Клюнкова (Клюна).
+          </p>
+        </div>
+      </div>
+      <div class="gallery__modal" data-target="gallery-picture5">
+        <img src="img/gallery-picture5.jpg" alt="Малевич К.С. Женщина с&nbsp;вёдрами 1912" class="gallery-modal__img">
+        <button class="btn-reset gallery-modal__close-btn">
+          <img src="img/close.svg" alt="X" class="close-btn__img">
+        </button>
+        <div class="gallery-modal__right-side flex">
+          <div class="gallery-modal__title flex">
+            <h2 class="gallery-modal__artist-name">Казимир Малевич</h2>
+            <h3 class="gallery-modal__picture-name">&laquo;Женщина с&nbsp;вёдрами&raquo;</h3>
+            <span class="gallery-modal__period">1913</span>
+          </div>
+          <p class="gallery-modal__picture-descr">
+            Яркое произведение авангардного искусства, написанное в&nbsp;1912&nbsp;году. Ныне картина хранится
+            в&nbsp;коллекции нью-йоркского Музея современного искусства.
+          </p>
+        </div>
+      </div>
+      <div class="gallery__modal" data-target="gallery-picture6">
+        <img src="img/gallery-picture6.jpg" alt="Малевич К.С. Супрематизм 1915&ndash;1916" class="gallery-modal__img">
+        <button class="btn-reset gallery-modal__close-btn">
+          <img src="img/close.svg" alt="X" class="close-btn__img">
+        </button>
+        <div class="gallery-modal__right-side flex">
+          <div class="gallery-modal__title flex">
+            <h2 class="gallery-modal__artist-name">Казимир Малевич</h2>
+            <h3 class="gallery-modal__picture-name">&laquo;Супрематизм&raquo;</h3>
+            <span class="gallery-modal__period">1915&ndash;1916</span>
+          </div>
+          <p class="gallery-modal__picture-descr">
+            В&nbsp;1916 году художник создал общество &laquo;Супремус&raquo;, придумав и&nbsp;введя в&nbsp;обиход слово
+            &laquo;супрематизм&raquo;, которое в&nbsp;переводе с&nbsp;латинского означает &laquo;главенство&raquo;.
+            Первоначально название намекало на&nbsp;превосходство цвета над другими элементами картины. Позже появился
+            и&nbsp;другой смысл: превосходство над другими направлениями, вершина эволюции в&nbsp;искусстве.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
