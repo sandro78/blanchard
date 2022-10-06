@@ -1,13 +1,13 @@
-document.querySelector(".header-menu__search").addEventListener("click", function () {
+document.querySelector(".header-search__lnk").addEventListener("click", function () {
   document.querySelector(".search-form").classList.add("search-form--active");
-  document.querySelector(".header-logo__wrapper").classList.add("header-logo__wrapper--search-form-active");
-  document.querySelector(".menu-burger__btn").classList.add("menu-burger__btn--search-form-active");
-  document.querySelector(".header-search__wrapper").classList.add("header-search__wrapper--search-form-active");
+  document.querySelector(".header-logo").classList.add("header-logo--search-form-active");
+  document.querySelector(".burger-btn").classList.add("burger-btn--search-form-active");
+  document.querySelector(".header-search").classList.add("header-search--search-form-active");
 });
 
 document.querySelector(".search-form__close-btn").addEventListener("click", function () {
   document.querySelector(".search-form").classList.remove("search-form--active");
-  document.querySelector(".header-logo__wrapper").classList.remove("header-logo__wrapper--search-form-active")
-  document.querySelector(".menu-burger__btn").classList.remove("menu-burger__btn--search-form-active")
-  document.querySelector(".header-search__wrapper").classList.remove("header-search__wrapper--search-form-active");
+  document.querySelector(".header-logo").classList.remove("header-logo--search-form-active")
+  document.querySelector(".burger-btn").classList.remove("burger-btn--search-form-active")
+  document.querySelector(".header-search").classList.remove("header-search--search-form-active");
 });

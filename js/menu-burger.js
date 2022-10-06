@@ -1,4 +1,4 @@
-document.querySelector(".menu-burger__btn").addEventListener("click", () => {
+document.querySelector(".burger-btn").addEventListener("click", () => {
   document.querySelector(".menu-burger").classList.add("menu-burger--active");
 });
 

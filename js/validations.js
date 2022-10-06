@@ -1,4 +1,4 @@
-const validation = new JustValidate('.contacts__form', {
+const validation = new JustValidate('.contacts-form', {
   errorFieldCssClass: 'is-invalid',
   focusInvalidField: true,
   lockForm: true

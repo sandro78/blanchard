@@ -8,14 +8,14 @@ function artistItemClicked(e) {
   });
 
   e.currentTarget.classList.add('catalog__artist-lnk--active');
-  document.querySelectorAll('.artist__descr').forEach(function (tabsContent) {
-    tabsContent.classList.remove('artist__descr--active');
+  document.querySelectorAll('.artist-descr').forEach(function (tabsContent) {
+    tabsContent.classList.remove('artist-descr--active');
   });
   let el = document.querySelector(`[data-target="${path}"]`);
   if (!el) {
     el = document.querySelector('#artist-descr-stub');
   }
-  el.classList.add('artist__descr--active');
+  el.classList.add('artist-descr--active');
 }
 
 document.querySelectorAll('.catalog__artist-lnk').forEach(function (tabsBtn) {
