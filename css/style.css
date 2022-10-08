@@ -137,45 +137,6 @@ body {
   background-color: #000;
 }
 
-.menu-burger {
-  padding: 38px 0 50px 50px;
-  width: 100%;
-  height: 100vh;
-  background-color: #000;
-  flex-direction: column;
-  visibility: hidden;
-  top: 0;
-  left: 0;
-  position: absolute;
-  transition: transform .3s ease-in, visibility .3s ease-in;
-  transform: translateX(-101%);
-  z-index: 30;
-}
-
-.menu-burger__close-btn {
-  margin-bottom: 30px;
-}
-
-.menu-burger__nav {
-  flex-direction: column;
-}
-
-.menu-burger--active {
-  transform: none;
-  visibility: visible;
-}
-
-.menu-burger__lnk {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 64px;
-  color: #fff;
-}
-
-.menu-burger__item:not(:last-child) {
-  margin-bottom: 20px;
-}
-
 .burger-btn {
   display: none;
   outline-offset: 5px;
@@ -208,15 +169,18 @@ body {
   flex-wrap: wrap;
 }
 
-.header-menu1__item:nth-child(1) {
-  margin-left: -7px;
+.header-menu1__nav {
+  justify-content: space-between;
+  width: 100%;
 }
 
-.header-menu1__item:nth-child(2),
-.header-menu1__item:nth-child(3),
-.header-menu1__item:nth-child(4),
-.header-menu1__item:nth-child(5) {
-  padding-left: 10px;
+.header-menu1__close-btn {
+  display: none;
+  margin-bottom: 30px;
+}
+
+.header-menu1__login-wrapper {
+  display: none;
 }
 
 .header-menu1__item,
@@ -555,14 +519,6 @@ body {
   border-bottom: 1px solid #c283f3;
 }
 
-.menu-burger__login-wrapper {
-  padding: 19px 88px 22px 88px;
-  width: fit-content;
-  margin-top: auto;
-  border: 2px solid #9d5cd0;
-  border-radius: 100px;
-}
-
 .header-search {
   align-items: center;
 }
@@ -637,7 +593,54 @@ body {
     display: flex;
   }
 
-  .header-menu1,
+  .header-menu1 {
+    padding: 38px 0 50px 50px;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transition: transform .3s ease-in, visibility .3s ease-in;
+    transform: translateX(-101%);
+    z-index: 30;
+  }
+
+  .header-menu1__login-wrapper {
+    display: block;
+    padding: 19px 88px 22px 88px;
+    width: fit-content;
+    margin-top: auto;
+    border: 2px solid #9d5cd0;
+    border-radius: 100px;
+  }
+
+  .header-menu1__nav {
+    flex-direction: column;
+  }
+
+  .header-menu1--active {
+    transform: none;
+    visibility: visible;
+  }
+
+  .header-menu1__close-btn {
+    display: inline-block;
+  }
+
+  .header-menu1__item {
+    padding-left: 0;
+  }
+
+  .header-menu1__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+
   .header__line2,
   .header-login {
     display: none;
