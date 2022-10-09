@@ -214,6 +214,7 @@ body {
 .header-menu1__lnk:focus:not(:active),
 .header-login-lnk:focus:not(:active),
 .artists-dropdown__btn:focus:not(:active):not(.artists-dropdown__btn--active) {
+  outline: none;
   background-color: #7943a4;
 }
 
