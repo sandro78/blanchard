@@ -722,13 +722,21 @@ body {
   min-height: 630px;
 }
 
-.hero__swiper-container {
+.hero__swiper-wrapper {
   position: absolute;
   top: -170px;
   left: 0;
   bottom: 0;
   right: 0;
   overflow: hidden;
+}
+
+.hero__swiper-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   background-color: #d1ad7e;
   animation-name: resize;
   animation-duration: 10s;
