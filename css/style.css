@@ -213,7 +213,8 @@ body {
 
 .header-menu1__lnk:focus:not(:active),
 .header-login-lnk:focus:not(:active),
-.artists-dropdown__btn:focus:not(:active):not(.artists-dropdown__btn--active) {
+.artists-dropdown__btn:focus:not(:active):not(.artists-dropdown__btn--active),
+.header__btn-search:focus:not(:active) {
   outline: none;
   background-color: #7943a4;
 }
@@ -482,7 +483,8 @@ body {
 }
 
 .header__btn-search {
-  margin-right: 9px;
+  padding: 5px;
+  margin-right: 4px;
 }
 
 .header__btn-search svg rect,
