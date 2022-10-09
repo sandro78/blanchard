@@ -387,6 +387,10 @@ body {
   border-color: #9d5cd0;
 }
 
+.artist-item__lnk:focus::before {
+  opacity: 0.5;
+}
+
 .artist-item__lnk:active::before {
   opacity: 1;
 }
