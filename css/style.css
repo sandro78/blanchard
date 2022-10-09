@@ -509,6 +509,16 @@ body {
   transition: border-bottom .2s ease-in-out;
 }
 
+.header__input-search::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(255, 255, 255, 0.85);
+  opacity: .85; /* Firefox */
+}
+
+.header__input-search:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgba(255, 255, 255, 0.85);
+}
+
+
 .header__input-search:focus,
 .header__input-search:active {
   border: none;
