@@ -158,19 +158,12 @@ body {
   display: none;
 }
 
-.header-logo {
-  width: 22%;
-}
-
 .header-menu1 {
-  width: 46.75%;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .header-menu1__nav {
-  justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
 }
 
@@ -191,6 +184,10 @@ body {
   color: #fff;
 }
 
+.header-menu1__item:not(:last-child) {
+  margin-right: 48px;
+}
+
 .header-login-lnk {
   padding: 1px 6px;
   padding-left: 26px;
@@ -201,9 +198,12 @@ body {
 }
 
 .header-login {
-  width: 31.25%;
   justify-content: flex-end;
   align-items: center;
+}
+
+.header-search {
+  display: none;
 }
 
 .header-menu1__lnk {
@@ -246,10 +246,7 @@ body {
 }
 
 .header-menu2 {
-  margin-left: -8px;
-  justify-content: space-between;
   flex-wrap: wrap;
-  width: 65.88%;
 }
 
 .artists-dropdown__btn {
@@ -301,6 +298,10 @@ body {
 
 .artists-dropdown {
   position: relative;
+}
+
+.header-menu2__item:not(:last-child) {
+  margin-right: 96px;
 }
 
 .artists-dropdown__content {
@@ -477,7 +478,6 @@ body {
 }
 
 .header__search {
-  padding-right: 30px;
   min-width: 250px;
   align-items: center;
 }
@@ -536,10 +536,6 @@ body {
   border-bottom: 1px solid #c283f3;
 }
 
-.header-search {
-  align-items: center;
-}
-
 .header-search__lnk {
   display: none;
   margin-right: 5px;
@@ -582,6 +578,10 @@ body {
 }
 
 @media screen and (max-width: 1540px) {
+  .header-search {
+    display: flex;
+  }
+
   .header__line1 {
     padding: 29px 45px 25px 50px;
     align-items: center;
