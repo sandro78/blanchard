@@ -1023,6 +1023,10 @@ body {
   border: 1px solid #fff;
 }
 
+.gallery__filter-container > .choices > .choices__list--dropdown {
+  border-color: #999;
+}
+
 .gallery__filter-container > .choices {
   position: relative;
   width: 100%;
@@ -1035,7 +1039,7 @@ body {
   top: 0;
   right: 0;
   bottom: 0;
-  padding: 3px 0 15px 15px;
+  padding: 3px 0 15px 20px;
   border: none;
   min-height: 40px;
   font-weight: 400;
@@ -1080,9 +1084,14 @@ body {
 .choices__list--dropdown .choices__item,
 .choices__list[aria-expanded] .choices__item {
   padding-left: 20px;
-  padding-top: 2px;
+  padding-top: 15px;
   padding-bottom: 14px;
   color: #999;
+}
+
+.choices__list--dropdown .choices__item:not(:last-child),
+.choices__list[aria-expanded] .choices__item:not(:last-child) {
+  box-shadow: 0 2px 1px -1px #999;
 }
 
 .choices:focus,
