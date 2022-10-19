@@ -80,8 +80,8 @@ input:focus::placeholder {
 }
 
 .container {
-  max-width: 1920px;
-  padding: 0 160px;
+  max-width: 1700px;
+  padding: 0 50px;
   margin: 0 auto;
 }
 
@@ -107,10 +107,8 @@ body {
   color: #333;
 }
 
-@media screen and (max-width: 1540px) {
-  .container {
-    padding: 0 50px;
-  }
+.section__container {
+  padding: 80px 0;
 }
 
 @media screen and (max-width: 720px) {
@@ -129,12 +127,15 @@ body {
   display: inline-block;
 }
 
+.header__line1-wrapper {
+  background-color: #000;
+}
+
 .header__line1 {
   padding-top: 30px;
   padding-bottom: 30px;
   padding-right: 150px;
   justify-content: space-between;
-  background-color: #000;
 }
 
 .burger-btn {
@@ -237,12 +238,15 @@ body {
   color: #9d5cd0;
 }
 
+.header__line2-wrapper {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 .header__line2 {
   padding-top: 21px;
   padding-bottom: 23px;
   padding-right: 150px;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .header-menu2 {
@@ -939,11 +943,6 @@ body {
 }
 
 /* about */
-.about {
-  padding-top: 80px;
-  padding-bottom: 50px;
-}
-
 @media screen and (max-width: 1024px) {
   .about {
     padding-top: 120px;
@@ -974,11 +973,9 @@ body {
 
 /* gallery */
 .gallery {
-  padding: 80px 160px;
   background-position: center;
   background-size: cover;
   background-image: url('../img/gallery-bg.jpg');
-  margin-bottom: 80px;
   color: #fff;
 }
 
@@ -1610,10 +1607,6 @@ body {
 }
 
 /* catalog */
-.catalog {
-  margin-bottom: 80px;
-}
-
 .catalog__descr {
   margin: 0;
   margin-bottom: 42px;
@@ -1995,10 +1988,6 @@ body {
 }
 
 /* events */
-.events {
-  margin-bottom: 76px;
-}
-
 .events__title {
   margin-bottom: 10px;
 }
@@ -2331,10 +2320,6 @@ body {
 }
 
 /* projects */
-.projects {
-  margin-bottom: 75px;
-}
-
 .projects__descr {
   margin: 0;
   margin-bottom: 20px;
@@ -2585,15 +2570,12 @@ body {
 
 /* contacts */
 .contacts {
-  padding: 0;
-  padding-top: 33px;
   border: 1px solid #cacaca;
 }
 
 .contacts__header {
-  padding: 0;
-  padding-left: 160px;
-  padding-right: 160px;
+  padding-top: 43px;
+  padding-bottom: 44px;
   justify-content: space-between;
   align-items: center;
 }
