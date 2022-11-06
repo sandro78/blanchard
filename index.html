@@ -7,15 +7,12 @@
   <title>Blanchard художественная галлерея</title>
   <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.min.css">
   <link rel="stylesheet" href="css/choices.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="img/favicon.png">
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js" defer></script>
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js" defer></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" defer></script>
   <script src="https://unpkg.com/@popperjs/core@2" defer></script>
   <script src="https://unpkg.com/tippy.js@6" defer></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=mykey&lang=ru_RU" defer></script>
@@ -27,6 +24,7 @@
   <script src="js/gallery-swiper.js" defer></script>
   <script src="js/gallery-modals.js" defer></script>
   <script src="js/smooth-scroll.js" defer></script>
+  <script src="js/accordion.min.js" defer></script>
   <script src="js/accordion.js" defer></script>
   <script src="js/artists-nav.js" defer></script>
   <script src="js/events-swiper.js" defer></script>
@@ -328,8 +326,8 @@
                 fill="white" />
             </svg>
           </button>
-          <input class="header__input-search" type="text" name="search" id="search" placeholder="Поиск по сайту" required
-            aria-label="Поиск по сайту">
+          <input class="header__input-search" type="text" name="search" id="search" placeholder="Поиск по сайту"
+            required aria-label="Поиск по сайту">
         </form>
       </div>
     </div>
@@ -350,7 +348,8 @@
           Прикоснитесь к&nbsp;прекрасному
         </h1>
         <p class="section-descr hero__descr">
-          Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт предпосылки для
+          Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт предпосылки
+          для
           новых предложений.
         </p>
         <a class="hero__btn js-scroll-link" href="#contacts">
@@ -366,11 +365,13 @@
         <p class="section-descr about__descr">
           Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого
           участника как&nbsp;способного принимать собственные решения касаемо распределения внутренних резервов
-          и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать, что&nbsp;высококачественный прототип будущего проекта влечет
+          и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать, что&nbsp;высококачественный прототип будущего проекта
+          влечет
           за&nbsp;собой процесс внедрения и&nbsp;модернизации модели развития. Повседневная практика показывает, что
           высокое качество позиционных исследований создаёт необходимость включения в&nbsp;производственный план целого
           ряда внеочередных мероприятий с&nbsp;учётом комплекса распределения внутренних резервов и&nbsp;ресурсов.
-          В&nbsp;рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди
+          В&nbsp;рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность
+          среди
           определенных слоев населения, а&nbsp;значит, должны быть разоблачены.
         </p>
       </div>
@@ -486,9 +487,11 @@
           день остаются уделом либералов, которые жаждут быть функционально разнесены на&nbsp;независимые элементы.
         </p>
         <div class="catalog__content flex">
-          <div class="catalog__artists-descr">
+          <div class="catalog__artists-descr js-tabs-wrap">
             <div class="artist-descr flex" id="artist-descr-stub">
-              <div class="artist-descr__picture"></div>
+              <picture class="artist-descr__picture">
+                <img class="artist-descr__image" src="img/artist-picture-stub.jpg" alt="Неизвестный художник">
+              </picture>
               <h3 class="artist-descr__name">
                 Что мы&nbsp;о&nbsp;нём знаем?
               </h3>
@@ -501,7 +504,7 @@
                 </a>
               </div>
             </div>
-            <div class="artist-descr artist-descr--active flex" data-target="1400-12">
+            <div class="artist-descr active flex" data-target="1400-12">
               <picture class="artist-descr__picture">
                 <source media="(max-width: 768px)" srcset="img/artist-picture-1400-12-768.jpg">
                 <source media="(max-width: 1024px)" srcset="img/artist-picture-1400-12-1024.jpg">
@@ -515,224 +518,323 @@
               </div>
               <p class="artist-descr__text">
                 Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
-                продолжили его&nbsp;брат Давид и&nbsp;сын Ридольфо. Глава художественной мастерской, где юный Микеланджело
-                в&nbsp;течение года овладевал профессиональными навыками. Автор фресковых циклов, в&nbsp;которых выпукло,
+                продолжили его&nbsp;брат Давид и&nbsp;сын Ридольфо. Глава художественной мастерской, где юный
+                Микеланджело
+                в&nbsp;течение года овладевал профессиональными навыками. Автор фресковых циклов, в&nbsp;которых
+                выпукло,
                 со&nbsp;всевозможными подробностями показана домашняя жизнь библейских персонажей (в&nbsp;их&nbsp;роли
                 выступают знатные граждане Флоренции в&nbsp;костюмах того&nbsp;времени).
               </p>
             </div>
           </div>
           <div class="artists-nav">
-            <ul class="lst-reset artists-nav__lst accordion">
-              <li class="artists-nav__item" tabindex="-1">
-                <div class="artists-nav__wrapper flex" tabindex="-1">
+            <ul class="lst-reset artists-nav__lst accordion js-accordion-container">
+              <li class="artists-nav__item ac">
+                <button class="btn-reset artists-nav__wrapper ac-trigger flex">
                   <h3 class="artists-nav__epoch">C&nbsp;1400 по&nbsp;1499&nbsp;гг</h3>
-                  <button class="artists-nav__icon" tabindex="0" aria-label="Художники пятнадцатого века"></button>
-                </div>
-                <div class="catalog__artists-lst flex" tabindex="-1">
-                  <a class="catalog__artist-lnk" data-path="1400-01" tabindex="0">
-                    Бенедетто ди&nbsp;Биндо
-                  </a>
-                  <a class="catalog__artist-lnk" data-path="1400-02" tabindex="0">
-                    Бергоньоне, Амброджо
-                  </a>
-                  <a class="catalog__artist-lnk" data-path="1400-03" tabindex="0">
-                    Биссоло, Франческо
-                  </a>
-                  <a class="catalog__artist-lnk" data-path="1400-04" tabindex="0">
-                    Больтраффио, Джованни
-                  </a>
-                  <a class="catalog__artist-lnk" data-path="1400-05" tabindex="0">
-                    Бонсиньори, Франческо
-                  </a>
-                  <a class="catalog__artist-lnk" data-path="1400-06" tabindex="0">
-                    Боттичини, Рафаэлло
-                  </a>
-                  <a class="catalog__artist-lnk" data-path="1400-07" tabindex="0">
-                    Брамантино
-                  </a>
-                  <a class="catalog__artist-lnk" data-path="1400-08" tabindex="0">
-                    Бреа, Людовико
-                  </a>
-                  <a class="catalog__artist-lnk" data-path="1400-09" tabindex="0">
-                    Бьяджо д&rsquo;Антонио Туччи
-                  </a>
-                  <a class="catalog__artist-lnk" data-path="1400-10" tabindex="0">
-                    Веккьетта
-                  </a>
-                  <a class="catalog__artist-lnk" data-path="1400-11" tabindex="0">
-                    Андреа Верроккьо
-                  </a>
-                  <a class="catalog__artist-lnk catalog__artist-lnk--active" data-path="1400-12" tabindex="0">
-                    Доменико Гирландайо
-                  </a>
-                  <a class="catalog__artist-lnk" data-path="1400-13" tabindex="0">
-                    Беноццо Гоццоли
-                  </a>
-                  <a class="catalog__artist-lnk" data-path="1400-14" tabindex="0">
-                    Граначчи, Франческо
-                  </a>
-                  <a class="catalog__artist-lnk" data-path="1400-15" tabindex="0">
-                    Грегорио ди Чекко
-                  </a>
-                  <a class="catalog__artist-lnk" data-path="1400-16" tabindex="0">
-                    Джованни да Удине
-                  </a>
-                  <a class="catalog__artist-lnk" data-path="1400-17" tabindex="0">
-                    Джованни ди Паоло
-                  </a>
-                  <a class="catalog__artist-lnk" data-path="1400-18" tabindex="0">
-                    Джорджоне
-                  </a>
-                  <a class="catalog__artist-lnk" data-path="1400-19" tabindex="0">
-                    Парентино, Бернардо
-                  </a>
-                  <a class="catalog__artist-lnk" data-path="1400-20" tabindex="0">
-                    Пезеллино
-                  </a>
-                  <a class="catalog__artist-lnk" data-path="1400-21" tabindex="0">
-                    Пьетро Перуджино
-                  </a>
-                  <a class="catalog__artist-lnk" data-path="1400-22" tabindex="0">
-                    Перуцци, Бальдассаре
-                  </a>
-                  <a class="catalog__artist-lnk" data-path="1400-23" tabindex="0">
-                    Пизанелло
-                  </a>
-                  <a class="catalog__artist-lnk" data-path="1400-24" tabindex="0">
-                    Пинтуриккьо
-                  </a>
+                  <svg class="artists-nav__icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="artists-nav__icon-round" d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="2" />
+                    <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black" />
+                  </svg>
+                </button>
+                <div class="artists-nav__item-content ac-panel">
+                  <div class="artists-nav__item-content-wrap">
+                    <ul class="catalog__artists-lst lst-reset">
+                      <li class="catalog__artist-item">
+                        <a class="catalog__artist-lnk js-tab-btn" data-path="1400-01" tabindex="0">
+                          <span class="catalog__artist-txt">Бенедетто ди Биндо</span>
+                        </a>
+                      </li>
+                      <li class="catalog__artist-item">
+                        <a class="catalog__artist-lnk js-tab-btn" data-path="1400-02" tabindex="0">
+                          <span class="catalog__artist-txt">Бергоньоне, Амброджо</span>
+                        </a>
+                      </li>
+                      <li class="catalog__artist-item">
+                        <a class="catalog__artist-lnk js-tab-btn" data-path="1400-03" tabindex="0">
+                          <span class="catalog__artist-txt">Биссоло, Франческо</span>
+                        </a>
+                      </li>
+                      <li class="catalog__artist-item">
+                        <a class="catalog__artist-lnk js-tab-btn" data-path="1400-04" tabindex="0">
+                          <span class="catalog__artist-txt">Больтраффио, Джованни</span>
+                        </a>
+                      </li>
+                      <li class="catalog__artist-item">
+                        <a class="catalog__artist-lnk js-tab-btn" data-path="1400-05" tabindex="0">
+                          <span class="catalog__artist-txt">Бонсиньори, Франческо</span>
+                        </a>
+                      </li>
+                      <li class="catalog__artist-item">
+                        <a class="catalog__artist-lnk js-tab-btn" data-path="1400-06" tabindex="0">
+                          <span class="catalog__artist-txt">Боттичини, Рафаэлло</span>
+                        </a>
+                      </li>
+                      <li class="catalog__artist-item">
+                        <a class="catalog__artist-lnk js-tab-btn" data-path="1400-07" tabindex="0">
+                          <span class="catalog__artist-txt">Брамантино</span>
+                        </a>
+                      </li>
+                      <li class="catalog__artist-item">
+                        <a class="catalog__artist-lnk js-tab-btn" data-path="1400-08" tabindex="0">
+                          <span class="catalog__artist-txt">Бреа, Людовико</span>
+                        </a>
+                      </li>
+                      <li class="catalog__artist-item">
+                        <a class="catalog__artist-lnk js-tab-btn" data-path="1400-09" tabindex="0">
+                          <span class="catalog__artist-txt">Бьяджо д&rsquo;Антонио Туччи</span>
+                        </a>
+                      </li>
+                      <li class="catalog__artist-item">
+                        <a class="catalog__artist-lnk js-tab-btn" data-path="1400-10" tabindex="0">
+                          <span class="catalog__artist-txt">Веккьетта</span>
+                        </a>
+                      </li>
+                      <li class="catalog__artist-item">
+                        <a class="catalog__artist-lnk js-tab-btn" data-path="1400-11" tabindex="0">
+                          <span class="catalog__artist-txt">Андреа Верроккьо</span>
+                        </a>
+                      </li>
+                      <li class="catalog__artist-item">
+                        <a class="catalog__artist-lnk js-tab-btn active" data-path="1400-12" tabindex="0">
+                          <span class="catalog__artist-txt">Доменико Гирландайо</span>
+                        </a>
+                      </li>
+                      <li class="catalog__artist-item">
+                        <a class="catalog__artist-lnk js-tab-btn" data-path="1400-13" tabindex="0">
+                          <span class="catalog__artist-txt">Беноццо Гоццоли</span>
+                        </a>
+                      </li>
+                      <li class="catalog__artist-item">
+                        <a class="catalog__artist-lnk js-tab-btn" data-path="1400-14" tabindex="0">
+                          <span class="catalog__artist-txt">Граначчи, Франческо</span>
+                        </a>
+                      </li>
+                      <li class="catalog__artist-item">
+                        <a class="catalog__artist-lnk js-tab-btn" data-path="1400-15" tabindex="0">
+                          <span class="catalog__artist-txt">Грегорио ди Чекко</span>
+                        </a>
+                      </li>
+                      <li class="catalog__artist-item">
+                        <a class="catalog__artist-lnk js-tab-btn" data-path="1400-16" tabindex="0">
+                          <span class="catalog__artist-txt">Джованни да Удине</span>
+                        </a>
+                      </li>
+                      <li class="catalog__artist-item">
+                        <a class="catalog__artist-lnk js-tab-btn" data-path="1400-17" tabindex="0">
+                          <span class="catalog__artist-txt">Джованни ди Паоло</span>
+                        </a>
+                      </li>
+                      <li class="catalog__artist-item">
+                        <a class="catalog__artist-lnk js-tab-btn" data-path="1400-18" tabindex="0">
+                          <span class="catalog__artist-txt">Джорджоне</span>
+                        </a>
+                      </li>
+                      <li class="catalog__artist-item">
+                        <a class="catalog__artist-lnk js-tab-btn" data-path="1400-19" tabindex="0">
+                          <span class="catalog__artist-txt">Парентино, Бернардо</span>
+                        </a>
+                      </li>
+                      <li class="catalog__artist-item">
+                        <a class="catalog__artist-lnk js-tab-btn" data-path="1400-20" tabindex="0">
+                          <span class="catalog__artist-txt">Пезеллино</span>
+                        </a>
+                      </li>
+                      <li class="catalog__artist-item">
+                        <a class="catalog__artist-lnk js-tab-btn" data-path="1400-21" tabindex="0">
+                          <span class="catalog__artist-txt">Пьетро Перуджино</span>
+                        </a>
+                      </li>
+                      <li class="catalog__artist-item">
+                        <a class="catalog__artist-lnk js-tab-btn" data-path="1400-22" tabindex="0">
+                          <span class="catalog__artist-txt">Перуцци, Бальдассаре</span>
+                        </a>
+                      </li>
+                      <li class="catalog__artist-item">
+                        <a class="catalog__artist-lnk js-tab-btn" data-path="1400-23" tabindex="0">
+                          <span class="catalog__artist-txt">Пизанелло</span>
+                        </a>
+                      </li>
+                      <li class="catalog__artist-item">
+                        <a class="catalog__artist-lnk js-tab-btn" data-path="1400-24" tabindex="0">
+                          <span class="catalog__artist-txt">Пинтуриккьо</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </li>
-              <li class="artists-nav__item" tabindex="-1">
-                <div class="artists-nav__wrapper flex" tabindex="-1">
+              <li class="artists-nav__item ac">
+                <button class="btn-reset artists-nav__wrapper ac-trigger flex">
                   <h3 class="artists-nav__epoch">C&nbsp;1500 по&nbsp;1599&nbsp;гг</h3>
-                  <button class="artists-nav__icon" tabindex="0" aria-label="Художники шестнадцатого века"></button>
-                </div>
-                <div class="artists-lst-stub flex">
-                  <div class="artists-lst-stub__img">
-                    <div class="artists-lst-stub__img-inside"></div>
-                  </div>
-                  <div class="artists-lst-stub__descr">
-                    <h4 class="artists-lst-stub__title">
-                      Здесь пока пусто
-                    </h4>
-                    <p class="artists-lst-stub__txt">
-                      А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
-                    </p>
-                    <a href="#gallery" class="artists-lst-stub__descr-lnk js-scroll-link" tabindex="0">
-                      В&nbsp;галерею
-                    </a>
+                  <svg class="artists-nav__icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="artists-nav__icon-round" d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="2" />
+                    <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black" />
+                  </svg>
+                </button>
+                <div class="artists-nav__item-content ac-panel">
+                  <div class="artists-nav__item-content-wrap">
+                    <div class="artists-lst-stub flex">
+                      <div class="artists-lst-stub__img">
+                        <div class="artists-lst-stub__img-inside"></div>
+                      </div>
+                      <div class="artists-lst-stub__descr">
+                        <h4 class="artists-lst-stub__title">
+                          Здесь пока пусто
+                        </h4>
+                        <p class="artists-lst-stub__txt">
+                          А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
+                        </p>
+                        <a href="#gallery" class="artists-lst-stub__descr-lnk js-scroll-link" tabindex="0">
+                          В&nbsp;галерею
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </li>
-              <li class="artists-nav__item" tabindex="-1">
-                <div class="artists-nav__wrapper flex" tabindex="-1">
+              <li class="artists-nav__item ac">
+                <button class="btn-reset artists-nav__wrapper ac-trigger flex">
                   <h3 class="artists-nav__epoch">C&nbsp;1600 по&nbsp;1699&nbsp;гг</h3>
-                  <button class="artists-nav__icon" tabindex="0" aria-label="Художники семнадцатого века"></button>
-                </div>
-                <div class="artists-lst-stub flex">
-                  <div class="artists-lst-stub__img">
-                    <div class="artists-lst-stub__img-inside"></div>
-                  </div>
-                  <div class="artists-lst-stub__descr">
-                    <h4 class="artists-lst-stub__title">
-                      Здесь пока пусто
-                    </h4>
-                    <p class="artists-lst-stub__txt">
-                      А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
-                    </p>
-                    <a href="#gallery" class="artists-lst-stub__descr-lnk js-scroll-link" tabindex="0">
-                      В&nbsp;галерею
-                    </a>
+                  <svg class="artists-nav__icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="artists-nav__icon-round" d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="2" />
+                    <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black" />
+                  </svg>
+                </button>
+                <div class="artists-nav__item-content ac-panel">
+                  <div class="artists-nav__item-content-wrap">
+                    <div class="artists-lst-stub flex">
+                      <div class="artists-lst-stub__img">
+                        <div class="artists-lst-stub__img-inside"></div>
+                      </div>
+                      <div class="artists-lst-stub__descr">
+                        <h4 class="artists-lst-stub__title">
+                          Здесь пока пусто
+                        </h4>
+                        <p class="artists-lst-stub__txt">
+                          А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
+                        </p>
+                        <a href="#gallery" class="artists-lst-stub__descr-lnk js-scroll-link" tabindex="0">
+                          В&nbsp;галерею
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </li>
-              <li class="artists-nav__item" tabindex="-1">
-                <div class="artists-nav__wrapper flex" tabindex="-1">
+              <li class="artists-nav__item ac">
+                <button class="btn-reset artists-nav__wrapper ac-trigger flex">
                   <h3 class="artists-nav__epoch">C&nbsp;1700 по&nbsp;1799&nbsp;гг</h3>
-                  <button class="artists-nav__icon" tabindex="0" aria-label="Художники восемнадцатого века"></button>
-                </div>
-                <div class="artists-lst-stub flex">
-                  <div class="artists-lst-stub__img">
-                    <div class="artists-lst-stub__img-inside"></div>
-                  </div>
-                  <div class="artists-lst-stub__descr">
-                    <h4 class="artists-lst-stub__title">
-                      Здесь пока пусто
-                    </h4>
-                    <p class="artists-lst-stub__txt">
-                      А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
-                    </p>
-                    <a href="#gallery" class="artists-lst-stub__descr-lnk js-scroll-link" tabindex="0">
-                      В&nbsp;галерею
-                    </a>
+                  <svg class="artists-nav__icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="artists-nav__icon-round" d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="2" />
+                    <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black" />
+                  </svg>
+                </button>
+                <div class="artists-nav__item-content ac-panel">
+                  <div class="artists-nav__item-content-wrap">
+                    <div class="artists-lst-stub flex">
+                      <div class="artists-lst-stub__img">
+                        <div class="artists-lst-stub__img-inside"></div>
+                      </div>
+                      <div class="artists-lst-stub__descr">
+                        <h4 class="artists-lst-stub__title">
+                          Здесь пока пусто
+                        </h4>
+                        <p class="artists-lst-stub__txt">
+                          А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
+                        </p>
+                        <a href="#gallery" class="artists-lst-stub__descr-lnk js-scroll-link" tabindex="0">
+                          В&nbsp;галерею
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </li>
-              <li class="artists-nav__item" tabindex="-1">
-                <div class="artists-nav__wrapper flex" tabindex="-1">
+              <li class="artists-nav__item ac">
+                <button class="btn-reset artists-nav__wrapper ac-trigger flex">
                   <h3 class="artists-nav__epoch">C&nbsp;1800 по&nbsp;1899&nbsp;гг</h3>
-                  <button class="artists-nav__icon" tabindex="0" aria-label="Художники девятнадцатого века"></button>
-                </div>
-                <div class="artists-lst-stub flex">
-                  <div class="artists-lst-stub__img">
-                    <div class="artists-lst-stub__img-inside"></div>
-                  </div>
-                  <div class="artists-lst-stub__descr">
-                    <h4 class="artists-lst-stub__title">
-                      Здесь пока пусто
-                    </h4>
-                    <p class="artists-lst-stub__txt">
-                      А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
-                    </p>
-                    <a href="#gallery" class="artists-lst-stub__descr-lnk js-scroll-link" tabindex="0">
-                      В&nbsp;галерею
-                    </a>
+                  <svg class="artists-nav__icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="artists-nav__icon-round" d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="2" />
+                    <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black" />
+                  </svg>
+                </button>
+                <div class="artists-nav__item-content ac-panel">
+                  <div class="artists-nav__item-content-wrap">
+                    <div class="artists-lst-stub flex">
+                      <div class="artists-lst-stub__img">
+                        <div class="artists-lst-stub__img-inside"></div>
+                      </div>
+                      <div class="artists-lst-stub__descr">
+                        <h4 class="artists-lst-stub__title">
+                          Здесь пока пусто
+                        </h4>
+                        <p class="artists-lst-stub__txt">
+                          А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
+                        </p>
+                        <a href="#gallery" class="artists-lst-stub__descr-lnk js-scroll-link" tabindex="0">
+                          В&nbsp;галерею
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </li>
-              <li class="artists-nav__item" tabindex="-1">
-                <div class="artists-nav__wrapper flex" tabindex="-1">
+              <li class="artists-nav__item ac">
+                <button class="btn-reset artists-nav__wrapper ac-trigger flex">
                   <h3 class="artists-nav__epoch">C&nbsp;1900 по&nbsp;1999&nbsp;гг</h3>
-                  <button class="artists-nav__icon" tabindex="0" aria-label="Художники двадцатого века"></button>
-                </div>
-                <div class="artists-lst-stub flex">
-                  <div class="artists-lst-stub__img">
-                    <div class="artists-lst-stub__img-inside"></div>
-                  </div>
-                  <div class="artists-lst-stub__descr">
-                    <h4 class="artists-lst-stub__title">
-                      Здесь пока пусто
-                    </h4>
-                    <p class="artists-lst-stub__txt">
-                      А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
-                    </p>
-                    <a href="#gallery" class="artists-lst-stub__descr-lnk js-scroll-link" tabindex="0">
-                      В&nbsp;галерею
-                    </a>
+                  <svg class="artists-nav__icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="artists-nav__icon-round" d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="2" />
+                    <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black" />
+                  </svg>
+                </button>
+                <div class="artists-nav__item-content ac-panel">
+                  <div class="artists-nav__item-content-wrap">
+                    <div class="artists-lst-stub flex">
+                      <div class="artists-lst-stub__img">
+                        <div class="artists-lst-stub__img-inside"></div>
+                      </div>
+                      <div class="artists-lst-stub__descr">
+                        <h4 class="artists-lst-stub__title">
+                          Здесь пока пусто
+                        </h4>
+                        <p class="artists-lst-stub__txt">
+                          А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
+                        </p>
+                        <a href="#gallery" class="artists-lst-stub__descr-lnk js-scroll-link" tabindex="0">
+                          В&nbsp;галерею
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </li>
-              <li class="artists-nav__item" tabindex="-1">
-                <div class="artists-nav__wrapper flex" tabindex="-1">
+              <li class="artists-nav__item ac">
+                <button class="btn-reset artists-nav__wrapper ac-trigger flex">
                   <h3 class="artists-nav__epoch">C&nbsp;2000&nbsp;г</h3>
-                  <button class="artists-nav__icon" tabindex="0" aria-label="Художники двадцать первого века"></button>
-                </div>
-                <div class="artists-lst-stub flex">
-                  <div class="artists-lst-stub__img">
-                    <div class="artists-lst-stub__img-inside"></div>
-                  </div>
-                  <div class="artists-lst-stub__descr">
-                    <h4 class="artists-lst-stub__title">
-                      Здесь пока пусто
-                    </h4>
-                    <p class="artists-lst-stub__txt">
-                      А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
-                    </p>
-                    <a href="#gallery" class="artists-lst-stub__descr-lnk js-scroll-link" tabindex="0">
-                      В&nbsp;галерею
-                    </a>
+                  <svg class="artists-nav__icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="artists-nav__icon-round" d="M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z" fill="#ECECEC" stroke="#ECECEC" stroke-width="2" />
+                    <path d="M33.3333 26.6667L25 18.3333L16.6667 26.6667" stroke="black" />
+                  </svg>
+                </button>
+                <div class="artists-nav__item-content ac-panel">
+                  <div class="artists-nav__item-content-wrap">
+                    <div class="artists-lst-stub flex">
+                      <div class="artists-lst-stub__img">
+                        <div class="artists-lst-stub__img-inside"></div>
+                      </div>
+                      <div class="artists-lst-stub__descr">
+                        <h4 class="artists-lst-stub__title">
+                          Здесь пока пусто
+                        </h4>
+                        <p class="artists-lst-stub__txt">
+                          А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
+                        </p>
+                        <a href="#gallery" class="artists-lst-stub__descr-lnk js-scroll-link" tabindex="0">
+                          В&nbsp;галерею
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </li>
@@ -799,7 +901,8 @@
                   Выставка &laquo;Формация 2020&raquo;
                 </h3>
                 <p class="descr event__descr">
-                  Идейные соображения высшего порядка, а&nbsp;также современная методология разработки играет важную роль
+                  Идейные соображения высшего порядка, а&nbsp;также современная методология разработки играет важную
+                  роль
                   в&nbsp;формировании глубокомысленных рассуждений
                 </p>
                 <a href="#" class="event__lnk js-scroll-link">
@@ -911,7 +1014,8 @@
                 <img class="projects__image" src="img/projects-picture1.jpg" alt="Проект Freelands Foundation">
               </a>
               <a href="#" class="swiper-slide projects__swiper-slide js-scroll-link">
-                <img class="projects__image" src="img/projects-picture2.jpg" alt="Проект Institute for Contemporary Art">
+                <img class="projects__image" src="img/projects-picture2.jpg"
+                  alt="Проект Institute for Contemporary Art">
               </a>
               <a href="#" class="swiper-slide projects__swiper-slide js-scroll-link">
                 <img class="projects__image" src="img/projects-picture3.jpg" alt="Проект Workhouse arts center">
@@ -956,7 +1060,8 @@
                 <input id="name" type="text" name="name" class="contacts-form__fld" placeholder="Имя&ast;" required>
               </li>
               <li class="contacts-form__item">
-                <input id="phone" type="tel" name="phone" class="contacts-form__fld" placeholder="Телефон&ast;" required>
+                <input id="phone" type="tel" name="phone" class="contacts-form__fld" placeholder="Телефон&ast;"
+                  required>
               </li>
             </ul>
             <button class="btn-reset contacts-form__btn" type="submit">Заказать обратный звонок</button>

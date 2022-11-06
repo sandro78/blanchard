@@ -4,18 +4,18 @@ function artistItemClicked(e) {
   }
   const path = e.currentTarget.dataset.path;
   document.querySelectorAll('.catalog__artist-lnk').forEach(function (btn) {
-    btn.classList.remove('catalog__artist-lnk--active');
+    btn.classList.remove('active');
   });
 
-  e.currentTarget.classList.add('catalog__artist-lnk--active');
+  e.currentTarget.classList.add('active');
   document.querySelectorAll('.artist-descr').forEach(function (tabsContent) {
-    tabsContent.classList.remove('artist-descr--active');
+    tabsContent.classList.remove('active');
   });
   let el = document.querySelector(`[data-target="${path}"]`);
   if (!el) {
     el = document.querySelector('#artist-descr-stub');
   }
-  el.classList.add('artist-descr--active');
+  el.classList.add('active');
 }
 
 document.querySelectorAll('.catalog__artist-lnk').forEach(function (tabsBtn) {
