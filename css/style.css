@@ -2060,17 +2060,38 @@ body {
   margin: 0;
   border: none;
   border-radius: 100%;
-  background-color: var(--ultra-light-middle-gray);
   min-width: 50px;
+  max-width: 50px;
   min-height: 50px;
-  background-size: 11.79px 11.79px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url('../img/artists-period-closed-bg.svg');
+  max-height: 50px;
   transition: opacity var(--short-delay) ease-in-out, outline var(--short-delay) ease-in-out, background-color var(--short-delay) ease-in-out;
   cursor: pointer;
+  z-index: 10;
 }
 
+.events__nav-btn-icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  transition: background-color var(--middle-delay), var(--ultra-long-delay) ease;
+}
+
+.events__nav-btn-icon-round {
+  transition: fill var(--long-delay) ease, stroke var(--long-delay) ease;
+}
+
+.events__nav-btn:hover .events__nav-btn-icon-round,
+.events__nav-btn:focus .events__nav-btn-icon-round {
+  fill: var(--violet-ultra-light);
+  stroke: var(--violet-ultra-light);
+}
+
+.events__nav-btn:hover .events__nav-btn-icon::before,
+.events__nav-btn:hover .events__nav-btn-icon::after,
+.events__nav-btn:focus .events__nav-btn-icon::before,
+.events__nav-btn:focus .events__nav-btn-icon::after {
+  background-color: var(--white);
+}
 
 .events__nav-btn:focus,
 .events__nav-btn:active {
@@ -2093,12 +2114,12 @@ body {
 }
 
 .events__btn-prev {
-  transform: rotate(90deg);
+  transform: rotate(-90deg);
   left: -25px;
 }
 
 .events__btn-next {
-  transform: rotate(-90deg);
+  transform: rotate(90deg);
   right: -25px;
 }
 
@@ -2132,6 +2153,7 @@ body {
 }
 
 .event-slide3 {
+  margin-left: -1px;
   background-image: url('../img/event-bg3.jpg');
 }
 
@@ -2140,6 +2162,7 @@ body {
 }
 
 .event-slide5 {
+  margin-left: -1px;
   background-image: url('../img/event-bg5.jpg');
 }
 
@@ -2154,13 +2177,11 @@ body {
 
 .event__dates {
   margin-bottom: 13px;
-  padding-left: 5px;
 }
 
 .event__title {
   margin: 0;
   margin-bottom: 10px;
-  padding-left: 5px;
   max-width: 380px;
   font-weight: 600;
   font-size: 24px;
@@ -2175,7 +2196,6 @@ body {
 .event__descr {
   margin: 0;
   padding: 0;
-  padding-left: 5px;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
