@@ -2493,35 +2493,60 @@ body {
   margin: 0;
   border: none;
   border-radius: 100%;
-  background-color: var(--ultra-light-middle-gray);
-  min-width: 30px;
-  min-height: 30px;
-  background-size: 7.07px 7.07px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url('../img/artists-period-closed-bg.svg');
-  transition: opacity var(--short-delay) ease-in-out, outline var(--short-delay) ease-in-out, background-color var(--short-delay) ease-in-out;
+  background-color: transparent;
+  min-width: 32px;
+  max-width: 32px;
+  min-height: 32px;
+  max-height: 32px;
+  transition: outline var(--short-delay) ease-in-out, background-color var(--short-delay) ease-in-out;
   cursor: pointer;
   z-index: 2;
 }
 
-.projects__nav-btn:focus,
-.projects__nav-btn:active {
+.projects__nav-btn.swiper-button-disabled {
+  cursor: auto;
+}
+
+.projects__nav-btn-icon {
+  position: relative;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  transition: outline var(--short-delay) ease-in-out, background-color var(--middle-delay), var(--ultra-long-delay) ease;
+}
+
+.projects__nav-btn-icon-round {
+  transition: fill var(--long-delay) ease, stroke var(--long-delay) ease;
+}
+
+.projects__nav-btn:hover:not(.projects__nav-btn.swiper-button-disabled:hover) .projects__nav-btn-icon-round,
+.projects__nav-btn:focus:not(.projects__nav-btn.swiper-button-disabled:focus) .projects__nav-btn-icon-round {
+  fill: var(--violet-ultra-light);
+  stroke: var(--violet-ultra-light);
+}
+
+.projects__nav-btn:hover:not(.projects__nav-btn.swiper-button-disabled:hover) .projects__nav-btn-icon::before,
+.projects__nav-btn:hover:not(.projects__nav-btn.swiper-button-disabled:hover) .projects__nav-btn-icon::after,
+.projects__nav-btn:focus:not(.projects__nav-btn.swiper-button-disabled:focus) .projects__nav-btn-icon::before,
+.projects__nav-btn:focus:not(.projects__nav-btn.swiper-button-disabled:focus) .projects__nav-btn-icon::after {
+  background-color: var(--white);
+}
+
+.projects__nav-btn:focus {
+  outline: none;
+}
+
+.projects__nav-btn:focus:not(.projects__nav-btn.swiper-button-disabled:focus) .projects__nav-btn-icon,
+.projects__nav-btn:active:not(.projects__nav-btn.swiper-button-disabled:active) .projects__nav-btn-icon {
   outline: 2px solid var(--violet-middle);
 }
 
-.projects__nav-btn:hover,
-.projects__nav-btn:active {
-  background-color: var(--violet-ultra-light);
-}
-
 .projects__btn-prev {
-  transform: rotate(90deg);
+  transform: rotate(-180deg);
   left: 0px;
 }
 
 .projects__btn-next {
-  transform: rotate(-90deg);
   right: 0px;
 }
 
