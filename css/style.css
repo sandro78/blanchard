@@ -2415,13 +2415,29 @@ body {
   border: none;
 }
 
-.projects__tooltip-btn:focus .tooltip-icon-border,
-.projects__tooltip-btn:hover .tooltip-icon-border {
-  fill: var(--violet-ultra-light);
+.tippy-box[data-theme~='violet'] {
+  background-color: var(--violet-middle);
+  color: var(--white);
 }
 
+.tippy-box[data-theme~='violet'][data-placement^='top'] > .tippy-arrow::before {
+  border-top-color: var(--violet-middle);
+}
+
+.projects__tooltip-btn:focus {
+  outline: none;
+}
+
+.projects__tooltip-btn:focus .tooltip-icon-border,
+.projects__tooltip-btn:hover .tooltip-icon-border,
 .projects__tooltip-btn:active .tooltip-icon-border {
   fill: var(--violet-middle);
+}
+
+.projects__tooltip-btn:focus .tooltip-icon-text,
+.projects__tooltip-btn:hover .tooltip-icon-text,
+.projects__tooltip-btn:active .tooltip-icon-text {
+  fill: var(--white);
 }
 
 .projects__lnk,
