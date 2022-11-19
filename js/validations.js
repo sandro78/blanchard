@@ -1,3 +1,5 @@
+const phoneInput = document.querySelector("input[type='tel']");
+new Inputmask('+7(999) 999-99-99').mask(phoneInput);
 const validation = new JustValidate('.contacts-form', {
   errorFieldCssClass: 'is-invalid',
   focusInvalidField: true,
@@ -27,7 +29,7 @@ validation.addField('#phone', [
   {
     rule: 'checkTelFormat',
     validator: () => {
-      const phone = document.querySelector("input[type='tel']").value;
+      const phone = phoneInput.inputmask.unmaskedvalue();
       return !isNaN(Number(phone));
     },
     errorMessage: 'Недопустимый формат'
