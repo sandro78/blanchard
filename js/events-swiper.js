@@ -20,12 +20,22 @@
       320: {
         slidesPerView: 1,
         slidesPerGroup: 1,
-        spaceBetween: 0
       },
 
-      1244: {
+      568: {
         slidesPerView: 2,
-        slidesPerGroup: 2
+        slidesPerGroup: 2,
+        spaceBetween: 34
+      },
+
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 28
+      },
+
+      1540: {
+        slidesPerView: 3,
+        spaceBetween: "3.4375%"
       }
     },
 
