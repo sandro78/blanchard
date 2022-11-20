@@ -873,7 +873,7 @@ body {
   background-color: var(--violet-dark);
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1280px) {
   .hero {
     padding-top: 105px;
   }
@@ -961,7 +961,7 @@ body {
 }
 
 /* about */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1280px) {
   .about {
     padding-top: 120px;
     padding-bottom: 52px;
@@ -971,8 +971,6 @@ body {
 @media screen and (max-width: 720px) {
   .about {
     padding-top: 50px;
-    padding-left: 15px;
-    padding-right: 15px;
     padding-bottom: 42px;
   }
 
