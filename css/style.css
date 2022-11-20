@@ -20,7 +20,6 @@
   --ultra-long-delay: .6s;
 }
 
-
 html {
   box-sizing: border-box;
 }
@@ -2807,18 +2806,23 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1150px) {
   .contacts-form {
     flex-direction: column;
     align-items: flex-start;
   }
 
   .contacts-form__fields {
+    flex-direction: column;
     margin-bottom: 12px;
   }
 
   .contacts-form__fld {
     width: 323px;
+  }
+
+  .contacts-form__item:not(:last-child) {
+    margin-bottom: 12px;
   }
 
   .contacts-form__btn {
