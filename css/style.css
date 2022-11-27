@@ -762,6 +762,7 @@ body {
 .hero {
   position: relative;
   padding-top: 63px;
+  padding-bottom: 122px;
   min-height: 630px;
 }
 
@@ -841,8 +842,8 @@ body {
 }
 
 .hero__btn {
+  display: inline-block;
   padding: 17px 35px;
-  height: 70px;
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
@@ -880,6 +881,7 @@ body {
 @media screen and (max-width: 1280px) {
   .hero {
     padding-top: 105px;
+    padding-bottom: 114px;
   }
 
   .hero__descr {
@@ -888,29 +890,29 @@ body {
     max-width: 661px;
   }
 
-  .hero__slide1 {
+  .hero__swiper-slide--1 {
     background-image: url('../img/hero-bg1-1024.jpg');
   }
 
-  .hero__slide2 {
+  .hero__swiper-slide--2 {
     background-image: url('../img/hero-bg2-1024.jpg');
   }
 
-  .hero__slide3 {
+  .hero__swiper-slide--3 {
     background-image: url('../img/hero-bg3-1024.jpg');
   }
 }
 
 @media screen and (max-width: 768px) {
-  .hero__slide1 {
+  .hero__swiper-slide--1 {
     background-image: url('../img/hero-bg1-768.jpg');
   }
 
-  .hero__slide2 {
+  .hero__swiper-slide--2 {
     background-image: url('../img/hero-bg2-768.jpg');
   }
 
-  .hero__slide3 {
+  .hero__swiper-slide--3 {
     background-image: url('../img/hero-bg3-768.jpg');
   }
 }
@@ -923,18 +925,19 @@ body {
     padding-top: 30px;
     padding-left: 35px;
     padding-right: 35px;
+    padding-bottom: 45px;
     min-height: 310px;
   }
 
-  .hero__slide1 {
+  .hero__swiper-slide--1 {
     background-image: url('../img/hero-bg1-320.jpg');
   }
 
-  .hero__slide2 {
+  .hero__swiper-slide--2 {
     background-image: url('../img/hero-bg2-320.jpg');
   }
 
-  .hero__slide3 {
+  .hero__swiper-slide--3 {
     background-image: url('../img/hero-bg3-320.jpg');
   }
 
