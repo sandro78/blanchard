@@ -264,8 +264,6 @@ body {
 }
 
 .header__line2 {
-  padding-top: 21px;
-  padding-bottom: 23px;
   justify-content: space-between;
 }
 
@@ -322,6 +320,8 @@ body {
 
 .artists-dropdown {
   position: relative;
+  padding-top: 21px;
+  padding-bottom: 23px;
 }
 
 .header-menu2__item:not(:last-child) {
@@ -336,7 +336,8 @@ body {
   padding: 40px;
   padding-right: 20px;
   left: 6px;
-  top: 50px;
+  bottom: 0;
+  transform: translateY(100%);
   background-color: rgba(0, 0, 0, 0.6);
   transition-property: opacity, visibility;
   transition-duration: .4s, 0s;
