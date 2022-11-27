@@ -281,6 +281,10 @@ body {
   transition: color var(--short-delay) ease-in-out, background-image var(--short-delay) ease-in-out;
 }
 
+.artists-dropdown__btn:focus {
+  outline: none;
+}
+
 .artists-dropdown__heading {
   font-weight: 400;
   font-size: 18px;
@@ -301,7 +305,7 @@ body {
   transform-origin: center;
 }
 
-.artists-dropdown__btn:hover:not(.artists-dropdown__btn--active) {
+.artists-dropdown__btn:hover:not(.artists-dropdown__btn--active):not(:focus) {
   color: var(--violet-middle);
 }
 
