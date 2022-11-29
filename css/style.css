@@ -1012,6 +1012,10 @@ body {
   flex-direction: column;
 }
 
+.gallery__checkbox-wrapper {
+  align-items: flex-start;
+}
+
 .gallery__content {
   flex-wrap: wrap;
   justify-content: space-between;
