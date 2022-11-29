@@ -1245,62 +1245,65 @@ body {
 
 .gallery__nav-btn {
   position: relative;
+  padding: 0;
+  margin: 0;
   flex-shrink: 0;
-  width: 26px;
-  height: 26px;
-  background-color: var(--light-gray);
+  width: 30px;
+  height: 30px;
   border: none;
-  border-radius: 50%;
+  border-radius: 100%;
   cursor: pointer;
-  transition: opacity var(--short-delay) ease-in-out, background-color var(--short-delay) ease-in-out;
 }
 
-.gallery__nav-btn:active {
-  outline: 2px solid var(--black);
+.gallery__nav-btn-icon {
+  position: relative;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  transition: outline var(--short-delay) ease-in-out, background-color var(--middle-delay), var(--ultra-long-delay) ease;
+}
+
+.gallery__nav-btn-icon-round {
+  transition: fill var(--short-delay) ease, stroke var(--short-delay) ease;
+}
+
+.gallery__nav-btn:hover:not(.gallery__nav-btn.swiper-button-disabled:hover) .gallery__nav-btn-icon-round {
+  fill: var(--violet-middle);
+  stroke: var(--violet-middle);
+}
+
+.gallery__nav-btn:active:not(.gallery__nav-btn.swiper-button-disabled:active) .gallery__nav-btn-icon-round {
+  fill: var(--violet-dark);
+  stroke: var(--violet-dark);
+}
+
+.gallery__nav-btn:hover:not(.gallery__nav-btn.swiper-button-disabled:hover) .gallery__nav-btn-icon::before,
+.gallery__nav-btn:hover:not(.gallery__nav-btn.swiper-button-disabled:hover) .gallery__nav-btn-icon::after,
+.gallery__nav-btn:focus:not(.gallery__nav-btn.swiper-button-disabled:focus) .gallery__nav-btn-icon::before,
+.gallery__nav-btn:focus:not(.gallery__nav-btn.swiper-button-disabled:focus) .gallery__nav-btn-icon::after {
+  background-color: var(--dark-gray);
 }
 
 .gallery__nav-btn:focus {
+  outline: none;
+}
+
+.gallery__nav-btn:focus:not(.gallery__nav-btn.swiper-button-disabled:focus) .gallery__nav-btn-icon,
+.gallery__nav-btn:active:not(.gallery__nav-btn.swiper-button-disabled:active) .gallery__nav-btn-icon {
   outline: 2px solid var(--violet-middle);
-}
-
-.gallery__nav-btn:hover {
-  background-color: var(--violet-middle);
-}
-
-.gallery__nav-btn:active {
-  background-color: var(--violet-dark);
-}
-
-.gallery__nav-btn::before {
-  content: "";
-  position: absolute;
-  top: calc(50% - 7px / 2);
-  width: 7px;
-  height: 7px;
-  transform: rotate(45deg);
-  transform-origin: center;
 }
 
 .gallery__nav-btn.swiper-button-disabled {
   cursor: auto;
-  color: var(--light-middle-gray);
-  background-color: var(--ultra-light-middle-gray);
+  opacity: .5;
 }
 
 .gallery__btn-prev {
   margin-right: 10px;
 }
 
-.gallery__btn-next::before {
-  left: calc(50% - 7px / 2);
-  border-top: 1px solid var(--white);
-  border-right: 1px solid var(--white);
-}
-
-.gallery__btn-prev::before {
-  left: calc(50% - 7px / 2);
-  border-left: 1px solid var(--white);
-  border-bottom: 1px solid var(--white);
+.gallery__btn-prev .gallery__nav-btn-icon {
+  transform: rotate(-180deg);
 }
 
 .gallery__swiper-slide {
