@@ -2925,11 +2925,15 @@ body {
 }
 
 /* footer */
-.footer__container {
-  padding: 50px 160px;
+.footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: var(--black);
+}
+
+.footer__content {
   justify-content: space-between;
   align-items: center;
-  background-color: var(--black);
 }
 
 .footer__socials {
@@ -2959,7 +2963,7 @@ body {
 }
 
 @media screen and (max-width: 1540px) {
-  .footer__container {
+  .footer {
     padding: 50px;
     padding-top: 40px;
   }
@@ -2979,8 +2983,12 @@ body {
 }
 
 @media screen and (max-width: 720px) {
-  .footer__container {
-    padding: 20px 0;
+  .footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .footer__content {
     flex-direction: column-reverse;
     row-gap: 20px;
   }
