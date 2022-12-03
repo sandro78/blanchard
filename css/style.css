@@ -2131,18 +2131,18 @@ body {
 
 .events__slides-container {
   overflow: hidden;
-  padding: 1px;
 }
 
 .events__swiper-slide {
+  box-sizing: border-box;
   flex-direction: column;
   flex-wrap: wrap;
   min-height: 700px;
-  outline: 1px solid var(--light-middle-gray);
+  border: 1px solid var(--light-middle-gray);
 }
 
 .events__swiper-slide:focus {
-  outline: 1px solid var(--violet-middle);
+  border: 1px solid var(--violet-middle);
 }
 
 .events__swiper-slide-img,
