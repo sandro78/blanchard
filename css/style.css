@@ -1385,6 +1385,7 @@ body {
 	visibility: hidden;
 	transition: opacity var(--short-delay) ease-in-out, visibility var(--short-delay) ease-in-out;
   z-index: 100;
+  overflow-y: auto;
 }
 
 .gallery-modal {
