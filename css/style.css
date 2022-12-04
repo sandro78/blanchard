@@ -975,6 +975,10 @@ body {
 }
 
 /* about */
+.about {
+  padding-bottom: 68px;
+}
+
 .about__descr {
   margin: 0;
 }
@@ -1143,8 +1147,13 @@ body {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+.choices__list--single .choices__item {
+  margin-left: -5px;
+}
+
 .gallery__checkbox-wrapper {
   margin-top: auto;
+  padding-bottom: 4px;
 }
 
 .gallery__check-label {
@@ -1152,7 +1161,7 @@ body {
 }
 
 .gallery__check-label:not(:last-child) {
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 }
 
 .gallery__check-label:hover .visible-checkbox {
@@ -1241,12 +1250,12 @@ body {
 .gallery__navigation {
   display: inline-flex;
   align-items: center;
-  padding-left: 15px;
+  padding-left: 2px;
   margin-bottom: 30px;
 }
 
 .gallery__pagination {
-  margin-right: 10px;
+  margin-right: 20px;
   text-align: center;
 }
 
@@ -1306,7 +1315,7 @@ body {
 }
 
 .gallery__btn-prev {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .gallery__btn-prev .gallery__nav-btn-icon {
