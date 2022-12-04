@@ -1659,7 +1659,7 @@ body {
 /* catalog */
 .catalog__descr {
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 }
 
 .catalog__artists-descr {
@@ -1706,15 +1706,18 @@ body {
 }
 
 .artist-descr__picture {
-  margin-bottom: 30px;
   background-repeat: no-repeat;
   background-size: 285px 262px;
   background-position: center;
 }
 
+.artist-descr__image {
+  margin-bottom: 27px;
+}
+
 .artist-descr__name {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   font-weight: 600;
   font-size: 24px;
   line-height: 33px;
@@ -1767,8 +1770,8 @@ body {
   position: relative;
   margin-top: -1px;
   padding: 0;
-  padding-top: 18px;
-  padding-bottom: 16px;
+  padding-top: 40px;
+  padding-bottom: 41px;
   border: none;
   border-top: 1px solid transparent;
   border-bottom: 1px solid var(--light-middle-gray);
