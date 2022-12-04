@@ -2351,6 +2351,7 @@ body {
 /* projects */
 .projects {
   padding-top: 0;
+  padding-bottom: 73px;
 }
 
 .projects__descr {
@@ -2648,7 +2649,7 @@ body {
 }
 
 .contacts__header {
-  padding-top: 43px;
+  padding-top: 34px;
   padding-bottom: 44px;
   justify-content: space-between;
   align-items: center;
