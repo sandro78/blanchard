@@ -2349,6 +2349,10 @@ body {
 }
 
 /* projects */
+.projects {
+  padding-top: 0;
+}
+
 .projects__descr {
   margin: 0;
   margin-bottom: 20px;
