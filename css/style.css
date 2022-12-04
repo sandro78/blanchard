@@ -2071,8 +2071,12 @@ body {
 }
 
 /* events */
+.events {
+  padding-top: 8px;
+}
+
 .events__title {
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 
 .events__swiper {
@@ -2166,6 +2170,10 @@ body {
   min-width: 100%;
 }
 
+.events__swiper-slide-img {
+  margin-bottom: 10px;
+}
+
 .events__swiper-slide-img::before {
   padding-top: calc(85% - 6px);
 }
@@ -2175,7 +2183,12 @@ body {
   flex: 1;
   padding-left: 50px;
   padding-right: 50px;
-  padding-bottom: 48px;
+  padding-bottom: 40px;
+}
+
+.event__info-container--3 {
+  padding-left: 47px;
+  padding-right: 45px;
 }
 
 .event__place,
