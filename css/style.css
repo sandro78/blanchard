@@ -834,15 +834,16 @@ body {
 
 .hero__title {
   margin: 0;
+  margin-bottom: 18px;
   max-width: 597px;
   font-weight: 700;
   font-size: 72px;
-  line-height: 98px;
+  line-height: 88px;
 }
 
 .hero__descr {
   margin: 0;
-  margin-bottom: 92px;
+  margin-bottom: 90px;
   max-width: 579px;
   font-weight: 700;
   font-size: 18px;
@@ -851,7 +852,7 @@ body {
 
 .hero__btn {
   display: inline-block;
-  padding: 17px 35px;
+  padding: 20px 35px;
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
