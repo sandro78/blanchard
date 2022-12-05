@@ -638,8 +638,14 @@ body {
     display: flex;
   }
 
+  .header__line1 {
+    padding-right: 47px;
+    justify-content: space-between;
+  }
+
   .header-logo {
     width: 188px;
+    margin-right: 0;
   }
 
   .burger-btn {
