@@ -996,7 +996,7 @@ body {
 @media screen and (max-width: 1280px) {
   .about {
     padding-top: 80px;
-    padding-bottom: 52px;
+    padding-bottom: 70px;
   }
 }
 
@@ -1531,7 +1531,11 @@ body {
 
   .gallery__swiper {
     padding-top: 26px;
-    width: 100%;
+    width: calc(594/924*100%);
+  }
+
+  .gallery__swiper-slide {
+    min-height: 315px;
   }
 
   .gallery__navigation {
