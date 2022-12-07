@@ -1582,6 +1582,15 @@ body {
   .gallery__checkbox-wrapper {
     margin-bottom: 23px;
   }
+
+  .gallery__swiper {
+    padding-top: 20px;
+    width: 100%;
+  }
+
+  .gallery__swiper-slide {
+    min-height: 330px;
+  }
 }
 
 @media screen and (max-width: 720px) {
@@ -1993,8 +2002,13 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .catalog {
+    padding-bottom: 77px;
+  }
+
   .artists-nav {
     width: 100%;
+    margin-bottom: 55px;
   }
 
   .catalog__artists-lst {
@@ -2340,12 +2354,16 @@ body {
 
 @media screen and (max-width: 768px) {
   .event__info-container {
-    padding-left: 18px;
+    padding-left: 36px;
     padding-right: 18px;
   }
 
   .event__title {
     margin-bottom: 5px;
+  }
+
+  .event__lnk {
+    padding-left: 0;
   }
 }
 
@@ -2599,9 +2617,13 @@ body {
 }
 
 @media screen and (max-width: 830px) {
+  .projects {
+    padding-top: 40px;
+  }
+
   .projects__descr {
     max-width: 657px;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
   }
 
   .projects__lnk {
@@ -2618,7 +2640,7 @@ body {
   }
 
   .projects__swiper-title {
-    margin-bottom: 22px;
+    margin-bottom: 24px;
   }
 
   .projects__swiper-slide > img {
@@ -2875,13 +2897,23 @@ body {
 }
 
 @media screen and (max-width: 1150px) {
+  .contacts__header {
+    justify-content: flex-start;
+    row-gap: 0;
+    margin-bottom: 0;
+  }
+
+  .contacts-address {
+    margin-bottom: 37px;
+  }
+
   .contacts-form {
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 30px;
   }
 
   .contacts-form__fields {
-    flex-direction: column;
     margin-bottom: 12px;
   }
 
@@ -2889,13 +2921,28 @@ body {
     width: 323px;
   }
 
-  .contacts-form__item:not(:last-child) {
-    margin-bottom: 12px;
-  }
-
   .contacts-form__btn {
     padding: 10px 20px;
     width: 317px;
+  }
+
+  .map-container {
+    height: 697px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contacts__container {
+    padding-top: 33px;
+    padding-left: 0;
+  }
+
+  .contacts-address__details {
+    font-size: 16px;
+  }
+
+  .map-container {
+
   }
 }
 
