@@ -1,6 +1,6 @@
 (() => {
   new Swiper(".projects__slides-container", {
-    slidesPerView: 3,
+    slidesPerView: 1,
     slidesPerGroup: 1,
     grid: {
       rows: 1,
@@ -13,23 +13,17 @@
     },
 
     breakpoints: {
-      320: {
-        slidesPerView: 1
-      },
-
       768: {
         slidesPerView: 2,
         spaceBetween: 34
       },
 
       1024: {
-        slidesPerView: 2,
         spaceBetween: 50
       },
 
       1540: {
-        slidesPerView: 3,
-        spaceBetween: "2.8125%"
+        slidesPerView: 3
       }
     },
 

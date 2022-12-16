@@ -1,7 +1,7 @@
 (() => {
   new Swiper(".events__slides-container", {
-    slidesPerView: 3,
-    slidesPerGroup: 3,
+    slidesPerView: 1,
+    slidesPerGroup: 1,
     grid: {
       rows: 1,
       fill: "row"
@@ -17,11 +17,6 @@
     },
 
     breakpoints: {
-      320: {
-        slidesPerView: 1,
-        slidesPerGroup: 1,
-      },
-
       568: {
         slidesPerView: 2,
         slidesPerGroup: 2,
@@ -34,8 +29,7 @@
       },
 
       1540: {
-        slidesPerView: 3,
-        spaceBetween: "3.4375%"
+        spaceBetween: 50
       }
     },
 
