@@ -1,13 +1,26 @@
-document.querySelector(".burger-btn").addEventListener("click", () => {
-  document.querySelector(".header-menu1").classList.add("header-menu1--active");
+const burgerBtn = document.querySelector('.burger-btn');
+const closeBtn = document.querySelector('.header-menu1__close-btn');
+const menu = document.querySelector('.header-menu1');
+const links = document.querySelectorAll('.header-menu1__lnk');
+const activeMenuClassName = 'header-menu1--active';
+
+burgerBtn.addEventListener('click', () => {
+  menu.classList.add(activeMenuClassName);
+  menu.style.transition = 'transform var(--middle-delay) ease-in, visibility var(--middle-delay) ease-in';
 });
 
-document.querySelector(".header-menu1__close-btn").addEventListener("click", () => {
-  document.querySelector(".header-menu1").classList.remove("header-menu1--active");
+menu.addEventListener('transitionend', () => {
+  if (!menu.classList.contains(activeMenuClassName)) {
+    menu.style.transition = '';
+  }
 });
 
-document.querySelectorAll(".header-menu1__lnk").forEach((menuItem) => {
-  menuItem.addEventListener("click", () => {
-    document.querySelector(".header-menu1").classList.remove("header-menu1--active");
+closeBtn.addEventListener('click', () => {
+  menu.classList.remove(activeMenuClassName);
+});
+
+links.forEach((menuItem) => {
+  menuItem.addEventListener('click', () => {
+    menu.classList.remove(activeMenuClassName);
   });
 });
