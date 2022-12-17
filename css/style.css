@@ -682,7 +682,7 @@ body {
     padding-top: 38px;
     padding-left: 50px;
     padding-bottom: 50px;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: var(--black);
     flex-direction: column;
@@ -690,7 +690,7 @@ body {
     align-items: flex-start;
     visibility: hidden;
     top: 0;
-    left: 0;
+    left: -50px;
     position: absolute;
     transform: translateX(-101%);
     z-index: 30;
@@ -861,6 +861,8 @@ body {
   }
 
   .header-menu1 {
+    top: -10px;
+    left: -15px;
     padding-top: 15px;
     padding-left: 15px;
     padding-bottom: 27px;
