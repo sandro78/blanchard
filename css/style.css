@@ -661,7 +661,7 @@ body {
     display: flex;
   }
 
-  .header__line1-wrapper {
+  .header__line1-container {
     padding-right: 47px;
   }
 
@@ -772,10 +772,13 @@ body {
 }
 
 @media screen and (max-width: 720px) {
+  .header__line1-container {
+    padding-right: 15px;
+  }
+
   .header__line1-wrapper {
     padding-top: 13px;
     padding-bottom: 8px;
-    padding-right: 15px;
   }
 
   .search-form--active {
